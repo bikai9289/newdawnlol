@@ -1,0 +1,12 @@
+dist/
+.wrangler/
+.newdawn-build-*/
+node_modules/
+test-results/
+.env
+.env.*
+!.env.example
+__pycache__/
+designs/
+design-preview.html
+playwright-report/

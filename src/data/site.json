@@ -1,0 +1,8 @@
+{
+  "name": "New Dawn LoL",
+  "url": "https://newdawnlol.com",
+  "indexing": true,
+  "languages": ["en"],
+  "publication": {"artworkCleared": false},
+  "socialImage": "/assets/social-card.png"
+}

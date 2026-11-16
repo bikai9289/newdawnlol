@@ -1,0 +1,8 @@
+{
+  "artworkCleared": false,
+  "note": "Original geometric site graphics only. No Riot artwork, screenshots or logos. Pending operator review, independent of indexing.",
+  "assets": [
+    {"path":"/favicon.svg","creator":"New Dawn LoL project","license":"CC BY-SA 4.0","type":"Original geometric mark"},
+    {"path":"/assets/social-card.png","creator":"New Dawn LoL project","license":"CC BY-SA 4.0","type":"Original typography and geometric horizon; 1200x630"}
+  ]
+}

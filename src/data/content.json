@@ -1,0 +1,62 @@
+{
+  "releaseStatus": [
+    {"label":"RELEASE WINDOW","value":"Later in 2027"},
+    {"label":"NEXT MILESTONE","value":"January reveal"},
+    {"label":"EXACT LAUNCH DATE","value":"Not announced"}
+  ],
+  "sources": [
+    {"id":"riot-news","title":"Riot Games · Official League news","url":"https://www.leagueoflegends.com/en-us/news/","published":"2026-11-14","checked":"2026-11-16","type":"official","note":"New Dawn teaser listing gives a January reveal and release later in 2027. No exact release day."},
+    {"id":"riot-hub","title":"Riot Games · Official New Dawn hub","url":"https://www.leagueoflegends.com/en-us/new-dawn/","checked":"2026-11-16","type":"official","note":"Official update and sign-up destination. This fan site does not collect email addresses."},
+    {"id":"old-film","title":"League of Legends · A New Dawn cinematic","url":"https://www.youtube.com/watch?v=vzHrjOMfHPY","type":"official","note":"Original cinematic link. Direct fetch rate-limited during review; historical year cross-checked with contemporary coverage."},
+    {"id":"film-date","title":"Legit Reviews · Cinematic coverage, July 23, 2014","url":"https://www.legitreviews.com/new-league-legends-cinematic-new-dawn-unveiled_147535","published":"2014-07-23","checked":"2026-11-16","type":"reporting","note":"Historical evidence only; not evidence for the current update."}
+  ],
+  "timeline": [
+    {"date":"2026-11-14","label":"First look","detail":"Riot lists the New Dawn teaser in official League news.","status":"Published","sourceId":"riot-news"},
+    {"date":"2027-01","label":"Full reveal","detail":"More details are planned for January. No specific day is supplied.","status":"Planned","sourceId":"riot-news"},
+    {"date":"2027","label":"Release window","detail":"Release is planned for later in the year. Exact timing remains unannounced.","status":"Planned","sourceId":"riot-news"}
+  ],
+  "pages": [
+    {
+      "route":"/","lang":"en","published":true,
+      "title":"LoL New Dawn: Confirmed News & 2027 Update Guide",
+      "description":"A source-led guide to League of Legends New Dawn. Separate Riot announcements from rumors, follow the reveal timeline and check release status.",
+      "heading":"League of Legends New Dawn","eyebrow":"THE NEXT CHAPTER OF LEAGUE",
+      "lead":"A new era. A clearer picture.",
+      "intro":"Follow New Dawn without losing the thread. Start with the announcements, check what remains unknown, and trace each update back to its source.",
+      "sections":[
+        {"id":"confirmed","label":"01 / ON THE RECORD","heading":"What is confirmed?","status":"Confirmed by Riot","text":"New Dawn appears in Riot’s official League of Legends announcements for 2027. Riot has also opened a dedicated page for future updates.","sourceIds":["riot-news","riot-hub"]},
+        {"id":"rumors","label":"02 / READ WITH CARE","heading":"What is still unconfirmed?","status":"Not established","text":"An exact launch day, regional rollout times and a public testing schedule are not established by the official pages checked here. Do not turn a predicted month into a release date.","sourceIds":["riot-news"]},
+        {"id":"cinematic","label":"04 / SAME WORDS, DIFFERENT CONTEXT","heading":"New Dawn vs. A New Dawn","text":"Looking for the cinematic? A New Dawn is the earlier League film, documented in 2014 coverage. That film’s champions and scenes are not evidence of features in the 2027 update.","sourceIds":["old-film","film-date"]}
+      ],
+      "faq":[
+        {"question":"Where should I follow official updates?","answer":"Use Riot’s New Dawn hub and League news. This site links back to those sources and does not collect email addresses."},
+        {"question":"Is every detail in a leak confirmed?","answer":"No. A rumor needs its own source and a clear unconfirmed label. We will not fill a guide with unsupported feature lists."}
+      ]
+    },
+    {
+      "route":"/release-date/","lang":"en","published":true,
+      "title":"LoL New Dawn Release Date: 2027 Window & January Reveal",
+      "description":"LoL New Dawn is planned for later in 2027, with a full reveal in January 2027. Check confirmed timing, unknown dates and the source timeline.",
+      "heading":"LoL New Dawn release date","eyebrow":"RELEASE WATCH / NOVEMBER 16, 2026",
+      "lead":"2027. The day is still unknown.",
+      "intro":"The exact release date has not been announced in the official sources checked on November 16, 2026. Keep the reveal and launch as two separate milestones.",
+      "sections":[
+        {"id":"release-window","label":"01 / THE SHORT ANSWER","heading":"When does New Dawn come out?","status":"Official release window","text":"Riot’s announcement points to release later in 2027. It does not name a month or day. A precise countdown would imply more certainty than the announcement provides.","sourceIds":["riot-news"]},
+        {"id":"january","label":"02 / REVEAL ≠ RELEASE","heading":"What happens in January 2027?","text":"January is the full reveal milestone. It is not a confirmed January launch. The year follows the November 2026 announcement’s reference to the upcoming January.","sourceIds":["riot-news"]},
+        {"id":"watch","label":"04 / WHAT TO WATCH NEXT","heading":"How this page will change","text":"Look for an explicit release announcement, any testing details and region-specific timing. When a source adds or changes one of those facts, we will update this page and its modification date.","sourceIds":["riot-hub"]}
+      ],
+      "faq":[
+        {"question":"Can I download New Dawn now?","answer":"The sources checked here do not provide a separate New Dawn download. Use official Riot channels rather than third-party installers promising early access."},
+        {"question":"Is there a confirmed beta date?","answer":"No beta date is established by the official pages reviewed for this guide. We will add one only when a source supplies it."},
+        {"question":"Does a January reveal mean a January release?","answer":"No. The full reveal and the planned release later in 2027 are separate milestones."}
+      ]
+    },
+    {"route":"/changes/","lang":"en","published":false,"intent":"Confirmed update changes"},
+    {"route":"/characters/","lang":"en","published":false,"intent":"Champion continuity and confirmed character details"},
+    {"route":"/leaks/","lang":"en","published":false,"intent":"Traceable rumors separated from official facts"},
+    {"route":"/teaser/","lang":"en","published":false,"intent":"Official teaser context and observations"},
+    {"route":"/runes/","lang":"en","published":false,"intent":"Confirmed rune-system details"},
+    {"route":"/lol-2/","lang":"en","published":false,"intent":"Clarify sequel naming using primary statements"},
+    {"route":"/news/","lang":"en","published":false,"intent":"Dated announcement feed"}
+  ]
+}

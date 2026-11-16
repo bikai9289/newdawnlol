@@ -1,0 +1,6 @@
+{
+  "en": {"label": "English", "prefix": "", "enabled": true},
+  "es": {"label": "Español", "prefix": "/es", "enabled": false},
+  "pt": {"label": "Português", "prefix": "/pt", "enabled": false},
+  "tr": {"label": "Türkçe", "prefix": "/tr", "enabled": false}
+}
