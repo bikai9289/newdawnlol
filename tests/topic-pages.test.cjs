@@ -2,7 +2,7 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const c=require('../src/data/content.json');
-const routes=['/','/release-date/','/changes/','/teaser/','/lol-2/'];
+const routes=['/','/release-date/','/changes/','/teaser/','/lol-2/','/map/'];
 require('node:child_process').execFileSync(process.execPath,['scripts/build.mjs']);
 test('published topic pages have shared navigation, canonical, breadcrumbs and sibling links',()=>{
  const titles=[];

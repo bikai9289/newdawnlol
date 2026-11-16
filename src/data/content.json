@@ -98,6 +98,23 @@
       "checked": "2026-11-16",
       "type": "official artwork",
       "note": "Existing League champion artwork used for context. It is not a New Dawn model preview."
+    },
+    {
+      "id": "rift-basics",
+      "title": "Riot Games: League of Legends How to Play",
+      "url": "https://www.leagueoflegends.com/en-us/how-to-play/",
+      "checked": "2026-11-16",
+      "type": "official current-game reference",
+      "note": "Reference for the existing game’s lanes, structures, jungle and objectives. Not a New Dawn map specification."
+    },
+    {
+      "id": "map-report",
+      "title": "Sheep Esports: New Dawn client and Summoner’s Rift preview coverage",
+      "url": "https://www.sheepesports.com/en/articles/league-of-legends-new-dawn-revealed-with-modernized-client-updated-summoner-s-rift-and-more/en",
+      "published": "2026-11-14",
+      "checked": "2026-11-16",
+      "type": "preview reporting",
+      "note": "Secondary reporting describes a refreshed Rift and preview imagery. It does not supply final terrain coordinates or objective rules; map claims remain attributed to this coverage."
     }
   ],
   "timeline": [
@@ -550,7 +567,7 @@
       "showTimeline": false,
       "title": "League of Legends New Dawn Changes: Confirmed vs Unknown",
       "description": "Check the confirmed New Dawn changes to runes, engine and champion continuity, with a source ledger and clear limits on teaser interpretations.",
-      "heading": "New Dawn changes",
+      "heading": "League of Legends New Dawn changes",
       "eyebrow": "UPDATE NOTES / CONFIRMED AND UNRESOLVED",
       "lead": "A change list with its limits attached.",
       "intro": "Start with the four points Riot Meddler clarified after the teaser. They establish the direction of the update, but they are not final patch notes or a complete feature list.",
@@ -569,7 +586,7 @@
         {
           "id": "change-ledger",
           "label": "01 / CONFIRMED DIRECTION",
-          "heading": "The changes Riot has clarified",
+          "heading": "Confirmed New Dawn changes and their limits",
           "text": "Meddler’s November 16 statement addresses questions that the teaser left open. Read the confirmed point together with its limit: continuity of a system does not mean every part of that system is unchanged.",
           "sourceIds": [
             "meddler",
@@ -606,7 +623,7 @@
         {
           "id": "patch-notes",
           "label": "02 / BEFORE THE FINAL NUMBERS",
-          "heading": "Why this is not a balance changelog",
+          "heading": "New Dawn champion changes are not final patch notes",
           "text": "There is not a complete New Dawn patch specification in the sources used here. The teaser and follow-up statement do not supply a champion-by-champion set of numerical changes.",
           "paragraphs": [
             "For a build decision, look for the exact ability, item or rune and its published values. A short shot of a champion moving differently is not enough to calculate a cooldown or declare a permanent mechanic. We will distinguish an announced change from a trailer observation and a later test-build revision.",
@@ -621,7 +638,7 @@
         {
           "id": "coverage-gaps",
           "label": "03 / OPEN QUESTIONS",
-          "heading": "What still needs its own announcement?",
+          "heading": "New Dawn client and map changes: what is still unresolved?",
           "text": "The current evidence does not provide a complete map specification, a finished client changelog, all champion loadout rules or final performance requirements. These are separate questions, not details we can infer from the release window.",
           "paragraphs": [
             "When Riot publishes more, this ledger can record the named system, the source date and the exact scope of the statement. A source for one champion does not establish the behavior of the entire roster. A test feature should also retain its test status until it is included in a live release announcement."
@@ -636,9 +653,80 @@
           }
         },
         {
+          "id": "runes-talents",
+          "heading": "New Dawn runes versus the “talents” interpretation",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "The reliable starting point is Meddler’s clarification: runes remain, including a Keystone, while the system is streamlined. That statement does not supply a final replacement interface, a complete selection tree or champion-by-champion loadout rules.",
+          "paragraphs": [
+            "Some early discussions call the previewed customization “talents” or assume that it replaces runes. We treat those descriptions as interpretations, not an official system name or a confirmed removal. The distinction is important even when a screenshot is genuine: a visible option does not show all of the systems that operate alongside it.",
+            "To resolve the question, look for a source that explains both the customization choice and its relationship to rune selection. Useful details would include when a choice is made, whether it can change during a match, which champions have it and whether the rules differ between modes. None of those details should be filled in from a label alone.",
+            "Until Riot publishes that explanation, keep two different things separate: the confirmed intention to retain runes, and the incomplete picture of other pre-game choices. A player planning a build still needs the actual rules for how those choices interact."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker",
+            "teaser"
+          ]
+        },
+        {
+          "id": "champion-continuity",
+          "heading": "New Dawn champions and skins: continuity versus reworks",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "Current champions and skins remain usable, according to the developer statement. That answers a collection-continuity question. It is not a list of reworked champions and does not confirm that a champion shown in the teaser is receiving a specific ability change.",
+          "paragraphs": [
+            "A champion can appear in a cinematic, a menu demonstration or a gameplay clip for different reasons. Those appearances should not be combined into a supposed launch roster. New Dawn is an update to League, so a character appearing in a short promotional sequence is not evidence that other champions will be unavailable.",
+            "For each future champion change, we would need a named source and an identifiable change: an announced visual update, a revised ability description or published numerical values. Comparisons that mix different skins, camera positions or effects cannot establish the scope by themselves.",
+            "This is also why the existing Ahri illustration elsewhere in this guide is labeled as current League artwork. It illustrates the continuity discussion; it is not evidence of a final New Dawn model."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker",
+            "teaser"
+          ],
+          "related": {
+            "href": "/lol-2/#collection",
+            "label": "Read the collection-continuity explanation"
+          }
+        },
+        {
+          "id": "client-visuals",
+          "heading": "New Dawn client and Summoner’s Rift visuals: evidence boundaries",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "The client, map presentation and gameplay rules need separate descriptions. A more polished menu does not prove a shorter login time, and a different-looking environment does not by itself establish different collision, movement or objective rules.",
+          "paragraphs": [
+            "For client reporting, separate a visible interface from technical behavior. A new arrangement of buttons can be described as a previewed layout; performance, installation requirements and the final feature set need explicit documentation. We do not publish a list of fixed client bugs merely because a new client is discussed.",
+            "For Summoner’s Rift, separate the visual surface from the playable geometry. Lighting, foliage and decorative scenery can change without proving that a route is open. A terrain claim needs evidence of movement or an authoritative map specification. A claim about a jungle objective needs its actual rules, not only a different creature model.",
+            "For a map-specific comparison, the map guide separates preview reporting from the current game baseline. It lists the reported visual elements and identifies the gameplay questions each image leaves unanswered."
+          ],
+          "sourceIds": [
+            "teaser",
+            "riot-hub"
+          ],
+          "related": {
+            "href": "/map/",
+            "label": "Open the New Dawn map evidence guide"
+          }
+        },
+        {
+          "id": "unconfirmed",
+          "heading": "Unconfirmed New Dawn rumors and what would verify them",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "Unconfirmed means a claim has not been established by the cited material. It does not mean the claim is definitely false, and a rumor becoming popular does not change its evidence level.",
+          "paragraphs": [
+            "Treat a claimed launch day, complete talent system, new engine or universal champion rework as separate claims. Ask which exact source supports each one. A post can be right about one detail and still contain unsupported conclusions about the rest.",
+            "A later correction should also stay visible. In the rune discussion, an explicit developer clarification is stronger evidence than an earlier reading of promotional footage. We will not keep repeating the older interpretation as an equal alternative once a direct statement answers it.",
+            "A useful rumor report identifies a checkable claim, its original source and its date. An anonymous list without those details should not be treated as a feature announcement, even if several accounts repeat it."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker",
+            "teaser"
+          ]
+        },
+        {
           "id": "next-update",
           "label": "04 / NEXT CHECKPOINT",
-          "heading": "When will the full change list arrive?",
+          "heading": "When will Riot explain more New Dawn changes?",
           "text": "The next stated presentation is the January 2027 full reveal. That is a milestone to watch, not a promise that every patch detail will be published that day. Release remains planned for later in 2027.",
           "paragraphs": [
             "We will add dated statements when they answer a specific open question. Until a final schedule exists, the release guide keeps the reveal and the playable update separate. This page tracks what changes; the timing page tracks when an announced event happens."
@@ -666,6 +754,14 @@
         {
           "question": "Does a confirmed change stay final forever?",
           "answer": "No. The ledger records what a dated source currently says. A later official statement or test revision may change the detail, and should be identified as a revision."
+        },
+        {
+          "question": "Is “talents” the official name of the complete New Dawn system?",
+          "answer": "The checked developer clarification does not define a complete system under that name. We label that wording as an interpretation until Riot supplies the actual rules and terminology."
+        },
+        {
+          "question": "What do I need before planning a New Dawn champion build?",
+          "answer": "Look for the actual ability, rune or loadout rules and the version they apply to. A collection-continuity statement or a preview image does not supply numerical build information."
         }
       ]
     },
@@ -677,7 +773,7 @@
       "showTimeline": false,
       "title": "League of Legends New Dawn Teaser: Official Video & Context",
       "description": "Find the official New Dawn teaser, distinguish it from the 2014 cinematic, and separate its announcement from predictions about the 2027 update.",
-      "heading": "The New Dawn teaser",
+      "heading": "League of Legends New Dawn teaser",
       "eyebrow": "WATCH GUIDE / OFFICIAL VIDEO",
       "lead": "Watch the source. Keep the context.",
       "intro": "Riot’s official League of Legends: New Dawn Teaser was published in November 2026. This guide points to that upload and explains which announcements travel with it, without treating promotional footage as final patch documentation.",
@@ -690,13 +786,14 @@
       "relatedRoutes": [
         "/",
         "/changes/",
-        "/lol-2/"
+        "/lol-2/",
+        "/map/"
       ],
       "sections": [
         {
           "id": "official-video",
           "label": "01 / ORIGINAL UPLOAD",
-          "heading": "Where can I watch the official teaser?",
+          "heading": "Where to watch the official New Dawn teaser",
           "text": "Use the League of Legends channel’s original upload linked below. The source thumbnail on this page is credited to Riot and links back to that video. This site does not host a copy of the footage.",
           "paragraphs": [
             "Opening the original also lets you check its publication context and description rather than rely on a re-upload’s title. A fan edit can use the same footage with a different headline, older clips or speculative commentary. Those additions do not become Riot’s announcement.",
@@ -709,7 +806,7 @@
         {
           "id": "announcement",
           "label": "02 / WHAT IS ACTUALLY DATED",
-          "heading": "What timing does the teaser announce?",
+          "heading": "What the New Dawn teaser says about timing",
           "text": "The official news listing and video description point to a full reveal in January and release later in 2027. Meddler’s subsequent clarification describes the reveal as early January. There is no exact launch day in those sources.",
           "paragraphs": [
             "Keep the event attached to its date. The November teaser publication is not a release. The January presentation is a reveal. A more dramatic trailer title does not make January a confirmed launch month. If a future upload adds an exact date, compare that statement with the earlier window rather than carrying forward an unsupported countdown."
@@ -728,7 +825,7 @@
         {
           "id": "reading-footage",
           "label": "03 / OBSERVATION IS NOT A SPECIFICATION",
-          "heading": "How should I interpret a teaser shot?",
+          "heading": "New Dawn teaser footage: observation versus explanation",
           "text": "Separate a visible observation from an explanation of how a system works. A shot can show an interface or an animation without establishing all its rules, final values or availability across champions.",
           "paragraphs": [
             "For example, a trailer discussion may interpret a customization choice as replacing runes. The later developer statement says runes and a Keystone remain. The explicit clarification is the stronger evidence for that question; the shot alone did not describe the complete system.",
@@ -745,9 +842,63 @@
           }
         },
         {
+          "id": "viewing-checklist",
+          "heading": "A practical New Dawn teaser viewing checklist",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "Watch the original upload once for context, then revisit the exact moment behind a claim. A useful note should identify what can actually be seen and separately record the explanation a viewer is proposing.",
+          "paragraphs": [
+            "First, identify the kind of shot. Is it gameplay with a visible interface, a client screen or a cinematic? A cinematic can communicate mood and character design without demonstrating playable mechanics. A client preview can show a layout without proving its final performance.",
+            "Second, keep the surrounding seconds. A cut can hide what happened before an animation, and a zoom can remove information that changes the interpretation. Repeated slow-motion playback does not restore context that an edit has removed.",
+            "Third, write a narrow observation before a theory. “A choice is visible on a screen” is different from “this replaces all runes.” The latter requires rules that a single frame may not provide. Compare the theory with subsequent developer statements before repeating it.",
+            "Finally, keep the conclusion open when the evidence is incomplete. Check a proposed timestamp against the original upload before sharing it. This guide links to that upload but does not supply a shot-by-shot timing transcript."
+          ],
+          "sourceIds": [
+            "teaser",
+            "meddler",
+            "tracker"
+          ]
+        },
+        {
+          "id": "upload-titles",
+          "heading": "Official New Dawn teaser titles versus uploader commentary",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "The original video is titled League of Legends: New Dawn Teaser. A re-upload may add terms such as “LoL 2,” “all changes,” “confirmed release” or “leaked gameplay.” Those words belong to the uploader unless Riot’s source independently supports them.",
+          "paragraphs": [
+            "Check the publishing channel and the description as well as the title. A thumbnail can combine footage from several dates. An older cinematic may be inserted for atmosphere, while commentary or on-screen captions can appear to speak for Riot even when they are the editor’s interpretation.",
+            "If two videos make different claims, do not compare their confidence or view counts. Open their sources and check whether they refer to the same event. A statement about the January reveal cannot support a headline claiming a January launch.",
+            "The official-video links on this site open the publisher’s upload. We do not mirror a longer fan edit and label it as Riot footage. The image caption identifies the original thumbnail and its source."
+          ],
+          "sourceIds": [
+            "teaser",
+            "riot-news"
+          ],
+          "related": {
+            "href": "/lol-2/",
+            "label": "Check the League of Legends 2 naming question"
+          }
+        },
+        {
+          "id": "reading-map-shots",
+          "heading": "What can New Dawn map and champion shots tell us?",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "A preview can support a description of its appearance without settling how the map or a champion will play. It is useful to keep those two questions on different lines when making a comparison.",
+          "paragraphs": [
+            "For an environment image, record camera angle, area and presentation before drawing conclusions about routes. A scene with a different view of a pit is not a measured map diagram. For a champion, keep the skin and visual context consistent before claiming a model change.",
+            "This is especially relevant to claims about walls, bushes and jungle access. Without a gameplay demonstration or a documented rule, a still image alone does not establish where a champion can walk, place vision or use an ability.",
+            "Our map page therefore separates current map basics from preview reporting and unresolved geometry. It does not draw new wall boundaries onto an image or publish an optimized jungle route before the playable rules are known."
+          ],
+          "sourceIds": [
+            "teaser"
+          ],
+          "related": {
+            "href": "/map/",
+            "label": "Read the separate map evidence ledger"
+          }
+        },
+        {
           "id": "older-film",
           "label": "04 / A DIFFERENT DAWN",
-          "heading": "Is this the old A New Dawn cinematic?",
+          "heading": "New Dawn teaser versus the 2014 A New Dawn cinematic",
           "text": "No. The historical A New Dawn cinematic is documented in July 2014 coverage. The current New Dawn teaser concerns the 2027 League update. Similar names can place both works in a search result without making them the same announcement.",
           "paragraphs": [
             "Check the upload’s title, publisher and date before drawing a conclusion from a result or thumbnail. The old cinematic’s cast does not establish which champions will receive changes in New Dawn. It is a useful film to watch in its own right, but it is not a launch trailer for this update."
@@ -785,12 +936,12 @@
       "published": true,
       "navLabel": "LoL 2?",
       "showTimeline": false,
-      "title": "Is New Dawn LoL 2? Riot’s Update and Account Clarifications",
-      "description": "New Dawn is a League of Legends update, not a standalone LoL 2. Read what Riot clarified about the name, existing champions, skins and engine.",
-      "heading": "Is New Dawn LoL 2?",
+      "title": "League of Legends 2: New Dawn Is an Update, Not a Sequel",
+      "description": "Is League of Legends 2 coming out? Riot describes New Dawn as an update to the existing game. Check its name, champions, skins and engine clarifications.",
+      "heading": "Is League of Legends 2 Coming Out?",
       "eyebrow": "NAME CHECK / UPDATE OR SEQUEL",
       "lead": "A major update to the League you know.",
-      "intro": "No: Riot Meddler describes New Dawn as an update to League of Legends, rather than a separate standalone game. The nickname “LoL 2” is not an announcement of another product.",
+      "intro": "Riot has not announced a standalone League of Legends 2 in the sources reviewed here. New Dawn is a major update to the existing League of Legends, according to Riot Meddler’s clarification. “LoL 2” is shorthand used in discussion, not the name of a confirmed sequel.",
       "heroImage": {
         "src": "/assets/official-teaser.webp",
         "alt": "Official League of Legends New Dawn teaser artwork",
@@ -806,7 +957,7 @@
         {
           "id": "name",
           "label": "01 / THE DIRECT ANSWER",
-          "heading": "What does Riot mean by New Dawn?",
+          "heading": "League of Legends 2 or New Dawn: what did Riot announce?",
           "text": "The November 16 clarification says the New Dawn label refers to a large update, and is not intended as a permanent addition to League’s name. That directly addresses the idea that the teaser announces a separately named sequel.",
           "paragraphs": [
             "Players may use “LoL 2” to express how large the update feels. That conversational meaning is different from a publisher announcing a second game. A headline can borrow the nickname without proving a new store listing, separate launch or new account system.",
@@ -852,7 +1003,7 @@
         {
           "id": "downloads",
           "label": "04 / NO INVENTED SEQUEL INSTALLER",
-          "heading": "Should I look for a LoL 2 download or preorder?",
+          "heading": "Is there a League of Legends 2 download or preorder?",
           "text": "The sources checked here do not announce a standalone LoL 2 installer, preorder or purchase. This independent guide does not distribute game files, take payments or offer account transfers.",
           "paragraphs": [
             "Use Riot’s official New Dawn hub for announcements. A page offering access needs a source that actually offers access; the existence of a teaser is not enough. An updates mailing list should also not be described as a guaranteed beta place unless Riot makes that promise.",
@@ -885,6 +1036,147 @@
       ]
     },
     {
+      "route": "/map/",
+      "lang": "en",
+      "published": true,
+      "navLabel": "Map",
+      "showTimeline": false,
+      "title": "League of Legends New Dawn Map: Summoner’s Rift Preview Guide",
+      "description": "Track the New Dawn map preview, compare current Summoner’s Rift basics with reporting, and see which terrain, jungle and objective details remain unconfirmed.",
+      "heading": "League of Legends New Dawn map",
+      "eyebrow": "SUMMONER’S RIFT / PREVIEW EVIDENCE",
+      "lead": "Summoner’s Rift: the preview and the open questions.",
+      "intro": "Preview coverage of the League of Legends New Dawn map describes refreshed Summoner’s Rift scenery, jungle areas and creatures, and updated minions. Here is a compact record of those reported visuals, the current-game reference and the terrain or objective rules that still need confirmation.",
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Official New Dawn teaser thumbnail, not a map diagram",
+        "caption": "Official teaser thumbnail. This image is not a New Dawn map layout.",
+        "sourceId": "teaser"
+      },
+      "relatedRoutes": [
+        "/",
+        "/changes/",
+        "/teaser/"
+      ],
+      "sections": [
+        {
+          "id": "evidence-ledger",
+          "heading": "New Dawn map changes: what does the evidence support?",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "Sheep Esports describes a brighter, more detailed Summoner’s Rift preview, including jungle areas and creatures, alongside redesigned minions. These are observations attributed to that report; they are not a final list of playable terrain or monster changes.",
+          "paragraphs": [
+            "The table keeps the reported element and the unanswered gameplay question together. That helps distinguish a visual refresh from a rule that would change how you move, clear the jungle or contest an objective."
+          ],
+          "sourceIds": [
+            "map-report",
+            "teaser"
+          ],
+          "table": {
+            "headers": [
+              "Reported preview element",
+              "What it does not yet establish"
+            ],
+            "rows": [
+              [
+                "Brighter, more detailed Rift scenery.",
+                "Exact movement boundaries, terrain collision or vision behavior."
+              ],
+              [
+                "New-looking jungle areas and creatures.",
+                "A final camp layout, spawn schedule, monster statistics or objective rewards."
+              ],
+              [
+                "Redesigned minion presentation.",
+                "Changes to wave timing, unit strength or lane economy."
+              ],
+              [
+                "A broader refresh of the map’s look.",
+                "A separate game mode or a complete replacement ruleset."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "current-baseline",
+          "heading": "Current Summoner’s Rift: the baseline for comparison",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "Riot’s current beginner guide describes a team game in which players advance through lanes toward the opposing Nexus. Turrets and inhibitors obstruct that route, and the jungle lies between the lanes. Its major objectives include Baron Nashor and drakes.",
+          "paragraphs": [
+            "That is the reference model for this comparison, not a claim about which details New Dawn will preserve. The guide also distinguishes top, jungle, mid, bot and support roles. Returning players can use it to refresh the vocabulary before reading preview coverage.",
+            "Use that vocabulary when checking a future map announcement: lane structures, jungle camps and large objectives are different systems. A source about one of them should not be extended into a claim about the others."
+          ],
+          "sourceIds": [
+            "rift-basics"
+          ]
+        },
+        {
+          "id": "visuals-geometry",
+          "heading": "Map visuals and playable geometry answer different questions",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "For players, the important distinction is between presentation and movement. An area can look different without proving that a path is open, a bush has changed its vision behavior or a ward spot works differently.",
+          "paragraphs": [
+            "A camera angle or decorative object can change how an entrance looks without measuring where a champion can walk. To settle a route or wall-crossing claim, look for explicit documentation or gameplay demonstrating that movement. A still image alone is not a collision map."
+          ],
+          "sourceIds": [
+            "teaser",
+            "map-report"
+          ],
+          "related": {
+            "href": "/teaser/#viewing-checklist",
+            "label": "Use the teaser viewing checklist"
+          }
+        },
+        {
+          "id": "jungle-objectives",
+          "heading": "New Dawn jungle and objectives: questions still unanswered",
+          "label": "NEW DAWN / EVIDENCE NOTES",
+          "text": "The reviewed material does not establish a final camp layout, monster statistics, spawn schedule, objective rewards or vision rules for New Dawn. A creature appearing different does not by itself tell us whether its gameplay changes.",
+          "paragraphs": [
+            "A jungle guide would need to identify a version and the actual changed rule. A preview creature’s appearance is not enough to calculate a fastest clear or an objective timing. Until new rules are published, do not relabel a current-game route as a tested New Dawn route."
+          ],
+          "sourceIds": [
+            "teaser",
+            "rift-basics"
+          ],
+          "related": {
+            "href": "/changes/",
+            "label": "Check the wider New Dawn change ledger"
+          }
+        },
+        {
+          "id": "next-map-update",
+          "label": "NEXT / MAP DETAILS",
+          "heading": "What would make the next map update useful?",
+          "text": "The next useful evidence would be a labeled layout, named terrain changes or documented objective rules. A test version should keep its test label until final release information confirms it.",
+          "paragraphs": [
+            "The January reveal is the next announced presentation, but it has not promised every missing map detail. Use the release guide for timing and the original teaser for preview context. This page adds no launch day or claimed final diagram."
+          ],
+          "sourceIds": [
+            "riot-news",
+            "riot-hub"
+          ],
+          "related": {
+            "href": "/release-date/",
+            "label": "Check the reveal and release window"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is there a final downloadable New Dawn map image?",
+          "answer": "No final layout is supplied by the sources reviewed for this guide. The thumbnail shown here is promotional artwork, not a terrain diagram."
+        },
+        {
+          "question": "Are all new jungle entrances and bushes confirmed?",
+          "answer": "This page does not establish a full set of terrain changes. Specific entrance or bush claims need their own authoritative documentation or demonstrated gameplay evidence."
+        },
+        {
+          "question": "Can I use current Baron and dragon timers for New Dawn?",
+          "answer": "Do not relabel existing values as confirmed New Dawn rules. The reviewed material does not give a final New Dawn objective schedule."
+        }
+      ]
+    },
+    {
       "route": "/characters/",
       "lang": "en",
       "published": false,
@@ -907,12 +1199,6 @@
       "lang": "en",
       "published": false,
       "intent": "Dated announcement feed"
-    },
-    {
-      "route": "/map/",
-      "lang": "en",
-      "published": false,
-      "intent": "Sourced map changes with evidence distinct from teaser interpretation"
     }
   ]
 }

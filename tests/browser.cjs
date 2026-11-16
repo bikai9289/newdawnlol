@@ -21,7 +21,7 @@ let browser;
  fs.mkdirSync(path.join(root,'test-results'),{recursive:true});
  for(const width of [320,390,768,1440]){
   await page.setViewportSize({width,height:950});
-  for(const route of ['/','/release-date/','/changes/','/teaser/','/lol-2/']){
+  for(const route of ['/','/release-date/','/changes/','/teaser/','/lol-2/','/map/']){
    const response=await page.goto(origin+route);assert.equal(response.status(),200);
    await page.locator('h1').waitFor();
    const sizes=await page.evaluate(()=>({view:innerWidth,scroll:document.documentElement.scrollWidth}));
@@ -35,11 +35,11 @@ let browser;
   }
  }
  const response=await page.goto(origin+'/about/');assert.equal(response.status(),200);
- for(const route of ['/missing/','/characters/','/leaks/','/runes/','/news/','/map/','/rift-timer/eu/']){
+ for(const route of ['/missing/','/characters/','/leaks/','/runes/','/news/','/rift-timer/eu/']){
   const r=await context.request.get(origin+route);assert.equal(r.status(),404);assert.match(await r.text(),/noindex/);
  }
  const redirect=await context.request.get(origin+'/release-date',{maxRedirects:0});assert.equal(redirect.status(),301);assert.equal(redirect.headers().location,'/release-date/');
  const image=await context.request.get(origin+'/assets/social-card.png');assert.equal(image.status(),200);assert.match(image.headers()['content-type'],/image\/png/);
  assert.deepEqual(errors,[]);
- console.log('Browser checks passed: 5 pages × 4 widths; no JS; FAQ, metadata, 404s, redirect and sharing image.');
+ console.log('Browser checks passed: 6 pages × 4 widths; no JS; FAQ, metadata, 404s, redirect and sharing image.');
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.kill();});

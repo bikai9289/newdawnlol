@@ -22,10 +22,11 @@ npm start
 - `/changes/`: a sourced change ledger and the limits of each clarification.
 - `/teaser/`: original video, announcement context and preview-versus-specification guidance.
 - `/lol-2/`: update-versus-sequel naming, champion/skin continuity and download questions.
+- `/map/`: attributed Summoner’s Rift preview observations, current-game baseline and unresolved terrain/objective rules.
 - `/about/`: editorial policy, privacy and attribution; noindex, excluded from sitemap.
 - `404.html`: real Pages 404, noindex. Unpublished topic routes return 404.
 
-Draft intents in `src/data/content.json`: characters, leaks, runes, news and map. Search-volume checks have not established their current demand. Publish only after supplying distinct useful sourced content and a route date; no empty placeholders. Navigation and sitemap derive from published pages. Topic pages use `navLabel`, `showTimeline=false` where appropriate, and `relatedRoutes` for sibling links. Internal fragments and related destinations are checked before delivery.
+Unpublished routes in `src/data/content.json`: characters, leaks, runes and news. Current character/rune clarifications and rumor checks are consolidated in `/changes/`. A news feed needs actual dated new material. Search-volume checks have not established current demand for those separate pages. Publish only after supplying distinct useful sourced content and a route date; no empty placeholders. Navigation and sitemap derive from published pages. Topic pages use `navLabel`, `showTimeline=false` where appropriate, and `relatedRoutes` for sibling links. Internal fragments and related destinations are checked before delivery.
 
 ## Source data
 
