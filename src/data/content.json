@@ -93,7 +93,7 @@
     },
     {
       "id": "ahri-art",
-      "title": "Riot Games ? Ahri champion page",
+      "title": "Riot Games: Ahri champion page",
       "url": "https://www.leagueoflegends.com/en-us/champions/ahri/",
       "checked": "2026-11-16",
       "type": "official artwork",
@@ -227,7 +227,7 @@
           "image": {
             "src": "/assets/official-ahri.webp",
             "alt": "Existing League of Legends Ahri splash illustration",
-            "caption": "Existing League artwork ? this is not a preview of a New Dawn champion model",
+            "caption": "Existing League artwork. This is not a preview of a New Dawn champion model.",
             "sourceId": "ahri-art",
             "width": 1215,
             "height": 717
@@ -460,7 +460,7 @@
           "image": {
             "src": "/assets/official-ahri.webp",
             "alt": "Existing League of Legends Ahri splash illustration",
-            "caption": "Existing League artwork ? this is not a preview of a New Dawn champion model",
+            "caption": "Existing League artwork. This is not a preview of a New Dawn champion model.",
             "sourceId": "ahri-art",
             "width": 1215,
             "height": 717
