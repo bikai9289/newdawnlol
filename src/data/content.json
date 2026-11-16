@@ -353,7 +353,14 @@
         "caption": "The next chapter of League · Official teaser, November 2026",
         "sourceId": "teaser"
       },
-      "navLabel": "Overview"
+      "navLabel": "Overview",
+      "relatedRoutes": [
+        "/release-date/",
+        "/changes/",
+        "/teaser/",
+        "/lol-2/",
+        "/map/"
+      ]
     },
     {
       "route": "/release-date/",
@@ -557,7 +564,14 @@
         "caption": "The next chapter of League · Official teaser, November 2026",
         "sourceId": "teaser"
       },
-      "navLabel": "Release date"
+      "navLabel": "Release date",
+      "relatedRoutes": [
+        "/",
+        "/changes/",
+        "/teaser/",
+        "/lol-2/",
+        "/map/"
+      ]
     },
     {
       "route": "/changes/",
@@ -579,8 +593,10 @@
       },
       "relatedRoutes": [
         "/",
+        "/release-date/",
         "/teaser/",
-        "/lol-2/"
+        "/lol-2/",
+        "/map/"
       ],
       "sections": [
         {
@@ -785,6 +801,7 @@
       },
       "relatedRoutes": [
         "/",
+        "/release-date/",
         "/changes/",
         "/lol-2/",
         "/map/"
@@ -950,8 +967,10 @@
       },
       "relatedRoutes": [
         "/",
+        "/release-date/",
         "/changes/",
-        "/teaser/"
+        "/teaser/",
+        "/map/"
       ],
       "sections": [
         {
@@ -1041,7 +1060,7 @@
       "published": true,
       "navLabel": "Map",
       "showTimeline": false,
-      "title": "League of Legends New Dawn Map: Summoner’s Rift Preview Guide",
+      "title": "League of Legends New Dawn Map: Summoner’s Rift Guide",
       "description": "Track the New Dawn map preview, compare current Summoner’s Rift basics with reporting, and see which terrain, jungle and objective details remain unconfirmed.",
       "heading": "League of Legends New Dawn map",
       "eyebrow": "SUMMONER’S RIFT / PREVIEW EVIDENCE",
@@ -1055,8 +1074,10 @@
       },
       "relatedRoutes": [
         "/",
+        "/release-date/",
         "/changes/",
-        "/teaser/"
+        "/teaser/",
+        "/lol-2/"
       ],
       "sections": [
         {

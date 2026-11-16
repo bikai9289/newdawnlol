@@ -40,6 +40,8 @@ Unpublished routes in `src/data/content.json`: characters, leaks, runes and news
 
 `scripts/build.mjs` generates canonical, OG/Twitter, WebSite/WebPage and breadcrumb data, sitemap, robots, redirects and security headers. No WebApplication or FAQ rich-result claim is used. All content and FAQ work without browser JavaScript.
 
+Each of the six editorial pages lists the other five in its bottom Related guides navigation. The route-specific lists exclude the current page and unpublished routes; acceptance tests check the exact destinations without duplicates.
+
 ## Cloudflare Pages and GitHub
 
 1. Create a **new** GitHub repository named `newdawnlol` containing these source and license files. Connect it to a new Cloudflare Pages project. Do not change the original live project.

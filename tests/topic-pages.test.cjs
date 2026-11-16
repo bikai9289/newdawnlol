@@ -13,10 +13,10 @@ test('published topic pages have shared navigation, canonical, breadcrumbs and s
   assert.ok(html.includes(`rel="canonical" href="https://newdawnlol.com${route}"`));
   titles.push(html.match(/<title>(.*?)<\/title>/s)[1]);
   if(route!=='/')assert.match(html,/BreadcrumbList/);
-  if(['/changes/','/teaser/','/lol-2/'].includes(route)){
-   const related=html.match(/<nav class="related-pages"[^>]*>(.*?)<\/nav>/s)[1];
-   for(const sibling of ['/','/changes/','/teaser/','/lol-2/'].filter(r=>r!==route))assert.ok(related.includes(`href="${sibling}"`));
-  }
+  const related=html.match(/<nav class="related-pages"[^>]*>(.*?)<\/nav>/s);
+  assert.ok(related,`${route} has related guides`);
+  const destinations=[...related[1].matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
+  assert.deepEqual(destinations,routes.filter(r=>r!==route),`${route} links to all five other published guides once`);
  }
  assert.equal(new Set(titles).size,routes.length);
 });
