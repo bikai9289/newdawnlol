@@ -1,8 +1,57 @@
 {
   "artworkCleared": false,
-  "note": "Original geometric site graphics only. No Riot artwork, screenshots or logos. Pending operator review, independent of indexing.",
+  "note": "Original graphics plus credited Riot video thumbnails and existing champion splash. Riot assets retain their copyright and are excluded from CC BY-SA. artworkCleared remains false; provenance is not a bespoke permission grant.",
   "assets": [
-    {"path":"/favicon.svg","creator":"New Dawn LoL project","license":"CC BY-SA 4.0","type":"Original geometric mark"},
-    {"path":"/assets/social-card.png","creator":"New Dawn LoL project","license":"CC BY-SA 4.0","type":"Original typography and geometric horizon; 1200x630"}
+    {
+      "path": "/favicon.svg",
+      "creator": "New Dawn LoL project",
+      "license": "CC BY-SA 4.0",
+      "type": "Original geometric mark"
+    },
+    {
+      "path": "/assets/social-card.png",
+      "creator": "New Dawn LoL project",
+      "license": "CC BY-SA 4.0",
+      "type": "Original typography and geometric horizon; 1200x630"
+    },
+    {
+      "path": "/assets/official-teaser.webp",
+      "creator": "Riot Games",
+      "copyright": "© Riot Games",
+      "license": "Riot Games Legal Jibber Jabber policy; not CC BY-SA",
+      "sourcePage": "https://www.youtube.com/watch?v=vs3p3mNhRXo",
+      "sourceImage": "https://i.ytimg.com/vi/vs3p3mNhRXo/maxresdefault.jpg",
+      "policy": "https://www.riotgames.com/en/legal",
+      "checked": "2026-11-16",
+      "width": 1280,
+      "height": 720,
+      "processing": "JPEG to WebP; no image content edits"
+    },
+    {
+      "path": "/assets/official-cinematic.webp",
+      "creator": "Riot Games",
+      "copyright": "© Riot Games",
+      "license": "Riot Games Legal Jibber Jabber policy; not CC BY-SA",
+      "sourcePage": "https://www.youtube.com/watch?v=vzHrjOMfHPY",
+      "sourceImage": "https://i.ytimg.com/vi/vzHrjOMfHPY/maxresdefault.jpg",
+      "policy": "https://www.riotgames.com/en/legal",
+      "checked": "2026-11-16",
+      "width": 1280,
+      "height": 720,
+      "processing": "JPEG to WebP; no image content edits"
+    },
+    {
+      "path": "/assets/official-ahri.webp",
+      "creator": "Riot Games",
+      "copyright": "© Riot Games",
+      "license": "Riot Games Legal Jibber Jabber policy; not CC BY-SA",
+      "sourcePage": "https://www.leagueoflegends.com/en-us/champions/ahri/",
+      "sourceImage": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
+      "policy": "https://www.riotgames.com/en/legal",
+      "checked": "2026-11-16",
+      "width": 1215,
+      "height": 717,
+      "processing": "JPEG to WebP; existing splash, not New Dawn footage"
+    }
   ]
 }

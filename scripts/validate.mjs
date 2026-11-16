@@ -23,11 +23,16 @@ export function validateContent(content, dates, site, locales) {
     sourceIds.add(source.id);
   }
   const routes = new Set();
+  const image = value => {
+    if(!value)return;
+    if(!/^\/assets\/[a-z0-9-]+\.webp$/.test(value.src)||!text(value.alt)||!text(value.caption)||!sourceIds.has(value.sourceId))fail('invalid editorial image');
+  };
   for (const page of content.pages) {
     if (!/^\/(?:[a-z0-9-]+\/)*$/.test(page.route) || routes.has(page.route)) fail('invalid or duplicate route');
     routes.add(page.route);
     if (typeof page.published !== 'boolean') fail('published must be boolean');
     if (!page.published) continue;
+    image(page.heroImage);
     if (!site.languages.includes(page.lang)) fail(`disabled language on ${page.route}`);
     if (page.lang !== 'en' && !page.route.startsWith(locales[page.lang].prefix + '/')) fail('translated route prefix mismatch');
     for (const field of ['title','description','heading','eyebrow','lead','intro']) if (!text(page[field])) fail(`missing ${field} on ${page.route}`);
@@ -39,6 +44,10 @@ export function validateContent(content, dates, site, locales) {
       ids.add(section.id);
       for (const field of ['label','heading','text']) if (!text(section[field])) fail(`missing section ${field}`);
       if (!Array.isArray(section.sourceIds) || !section.sourceIds.length || section.sourceIds.some(id => !sourceIds.has(id))) fail('unknown or missing section sources');
+      if(section.paragraphs && (!Array.isArray(section.paragraphs)||section.paragraphs.some(p=>!text(p))))fail('invalid paragraphs');
+      if(section.table && (!Array.isArray(section.table.headers)||!section.table.headers.length||section.table.headers.some(h=>!text(h))||!Array.isArray(section.table.rows)||section.table.rows.some(r=>!Array.isArray(r)||r.length!==section.table.headers.length||r.some(v=>!text(v)))))fail('invalid comparison table');
+      if(section.related && (!/^\/(?:[a-z0-9-]+\/)*(?:#[a-z0-9-]+)?$/.test(section.related.href)||!text(section.related.label)))fail('invalid contextual link');
+      image(section.image);
     }
     for (const item of page.faq) if (!text(item.question) || !text(item.answer)) fail('incomplete FAQ');
   }

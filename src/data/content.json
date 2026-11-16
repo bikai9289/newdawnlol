@@ -1,62 +1,578 @@
 {
   "releaseStatus": [
-    {"label":"RELEASE WINDOW","value":"Later in 2027"},
-    {"label":"NEXT MILESTONE","value":"January reveal"},
-    {"label":"EXACT LAUNCH DATE","value":"Not announced"}
+    {
+      "label": "RELEASE WINDOW",
+      "value": "Later in 2027"
+    },
+    {
+      "label": "NEXT MILESTONE",
+      "value": "January reveal"
+    },
+    {
+      "label": "EXACT LAUNCH DATE",
+      "value": "Not announced"
+    }
   ],
   "sources": [
-    {"id":"riot-news","title":"Riot Games · Official League news","url":"https://www.leagueoflegends.com/en-us/news/","published":"2026-11-14","checked":"2026-11-16","type":"official","note":"New Dawn teaser listing gives a January reveal and release later in 2027. No exact release day."},
-    {"id":"riot-hub","title":"Riot Games · Official New Dawn hub","url":"https://www.leagueoflegends.com/en-us/new-dawn/","checked":"2026-11-16","type":"official","note":"Official update and sign-up destination. This fan site does not collect email addresses."},
-    {"id":"old-film","title":"League of Legends · A New Dawn cinematic","url":"https://www.youtube.com/watch?v=vzHrjOMfHPY","type":"official","note":"Original cinematic link. Direct fetch rate-limited during review; historical year cross-checked with contemporary coverage."},
-    {"id":"film-date","title":"Legit Reviews · Cinematic coverage, July 23, 2014","url":"https://www.legitreviews.com/new-league-legends-cinematic-new-dawn-unveiled_147535","published":"2014-07-23","checked":"2026-11-16","type":"reporting","note":"Historical evidence only; not evidence for the current update."}
+    {
+      "id": "riot-news",
+      "title": "Riot Games · Official League news",
+      "url": "https://www.leagueoflegends.com/en-us/news/",
+      "published": "2026-11-14",
+      "checked": "2026-11-16",
+      "type": "official",
+      "note": "New Dawn teaser listing gives a January reveal and release later in 2027. No exact release day."
+    },
+    {
+      "id": "riot-hub",
+      "title": "Riot Games · Official New Dawn hub",
+      "url": "https://www.leagueoflegends.com/en-us/new-dawn/",
+      "checked": "2026-11-16",
+      "type": "official",
+      "note": "Official update and sign-up destination. This fan site does not collect email addresses."
+    },
+    {
+      "id": "old-film",
+      "title": "League of Legends · A New Dawn cinematic",
+      "url": "https://www.youtube.com/watch?v=vzHrjOMfHPY",
+      "type": "official",
+      "note": "Original cinematic link. Direct fetch rate-limited during review; historical year cross-checked with contemporary coverage."
+    },
+    {
+      "id": "film-date",
+      "title": "Legit Reviews · Cinematic coverage, July 23, 2014",
+      "url": "https://www.legitreviews.com/new-league-legends-cinematic-new-dawn-unveiled_147535",
+      "published": "2014-07-23",
+      "checked": "2026-11-16",
+      "type": "reporting",
+      "note": "Historical evidence only; not evidence for the current update."
+    },
+    {
+      "id": "meddler",
+      "title": "Riot Meddler · New Dawn clarification, November 16",
+      "url": "https://x.com/RiotMeddler/status/2122139728287818230",
+      "published": "2026-11-16",
+      "checked": "2026-11-16",
+      "type": "developer statement",
+      "note": "Original statement linked here. Direct X access was blocked during review; wording cross-checked against the linked developer-post tracker. No exact launch date is given."
+    },
+    {
+      "id": "tracker",
+      "title": "NERFPLZ · Readable copy of Riot developer posts",
+      "url": "https://www.nerfplz.com/lol-red-tracker/",
+      "checked": "2026-11-16",
+      "type": "statement mirror",
+      "note": "Mirror used to verify Meddler’s four clarifications. It is not the announcement publisher."
+    },
+    {
+      "id": "teaser",
+      "title": "League of Legends · Official New Dawn teaser",
+      "url": "https://www.youtube.com/watch?v=vs3p3mNhRXo",
+      "published": "2026-11-14",
+      "checked": "2026-11-16",
+      "type": "official",
+      "note": "Official teaser and its published thumbnail. Promotional footage is not a final feature specification."
+    },
+    {
+      "id": "season24",
+      "title": "Riot · Season 2024 Look Ahead, January 5, 2024",
+      "url": "https://www.leagueoflegends.com/en-us/news/dev/tl-dw-season-2024-look-ahead/",
+      "published": "2024-01-05",
+      "checked": "2026-11-16",
+      "type": "official history",
+      "note": "Historical example only: the preview named a January 10 cinematic and gave different windows for individual projects. It does not predict New Dawn."
+    },
+    {
+      "id": "patch14",
+      "title": "Riot · Patch 14.1 regional ranked start times",
+      "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-1-notes/",
+      "published": "2024-01-09",
+      "checked": "2026-11-16",
+      "type": "official history",
+      "note": "Historical regional scheduling example, not a New Dawn rollout schedule."
+    },
+    {
+      "id": "ahri-art",
+      "title": "Riot Games ? Ahri champion page",
+      "url": "https://www.leagueoflegends.com/en-us/champions/ahri/",
+      "checked": "2026-11-16",
+      "type": "official artwork",
+      "note": "Existing League champion artwork used for context. It is not a New Dawn model preview."
+    }
   ],
   "timeline": [
-    {"date":"2026-11-14","label":"First look","detail":"Riot lists the New Dawn teaser in official League news.","status":"Published","sourceId":"riot-news"},
-    {"date":"2027-01","label":"Full reveal","detail":"More details are planned for January. No specific day is supplied.","status":"Planned","sourceId":"riot-news"},
-    {"date":"2027","label":"Release window","detail":"Release is planned for later in the year. Exact timing remains unannounced.","status":"Planned","sourceId":"riot-news"}
+    {
+      "date": "2026-11-14",
+      "label": "First look",
+      "detail": "Riot lists the New Dawn teaser in official League news.",
+      "status": "Published",
+      "sourceId": "riot-news"
+    },
+    {
+      "date": "2027-01",
+      "label": "Full reveal",
+      "detail": "More details are planned for January. No specific day is supplied.",
+      "status": "Planned",
+      "sourceId": "riot-news"
+    },
+    {
+      "date": "2027",
+      "label": "Release window",
+      "detail": "Release is planned for later in the year. Exact timing remains unannounced.",
+      "status": "Planned",
+      "sourceId": "riot-news"
+    }
   ],
   "pages": [
     {
-      "route":"/","lang":"en","published":true,
-      "title":"LoL New Dawn: Confirmed News & 2027 Update Guide",
-      "description":"A source-led guide to League of Legends New Dawn. Separate Riot announcements from rumors, follow the reveal timeline and check release status.",
-      "heading":"League of Legends New Dawn","eyebrow":"THE NEXT CHAPTER OF LEAGUE",
-      "lead":"A new era. A clearer picture.",
-      "intro":"Follow New Dawn without losing the thread. Start with the announcements, check what remains unknown, and trace each update back to its source.",
-      "sections":[
-        {"id":"confirmed","label":"01 / ON THE RECORD","heading":"What is confirmed?","status":"Confirmed by Riot","text":"New Dawn appears in Riot’s official League of Legends announcements for 2027. Riot has also opened a dedicated page for future updates.","sourceIds":["riot-news","riot-hub"]},
-        {"id":"rumors","label":"02 / READ WITH CARE","heading":"What is still unconfirmed?","status":"Not established","text":"An exact launch day, regional rollout times and a public testing schedule are not established by the official pages checked here. Do not turn a predicted month into a release date.","sourceIds":["riot-news"]},
-        {"id":"cinematic","label":"04 / SAME WORDS, DIFFERENT CONTEXT","heading":"New Dawn vs. A New Dawn","text":"Looking for the cinematic? A New Dawn is the earlier League film, documented in 2014 coverage. That film’s champions and scenes are not evidence of features in the 2027 update.","sourceIds":["old-film","film-date"]}
+      "route": "/",
+      "lang": "en",
+      "published": true,
+      "title": "League of Legends New Dawn: Confirmed News & 2027 Guide",
+      "description": "A source-led guide to League of Legends New Dawn. Separate Riot announcements from rumors, follow the reveal timeline and check release status.",
+      "heading": "League of Legends New Dawn",
+      "eyebrow": "THE NEXT CHAPTER OF LEAGUE",
+      "lead": "The next chapter. Without the guesswork.",
+      "intro": "League of Legends New Dawn is the major update planned for 2027. Here is what Riot has announced, what its developers have clarified, and what players still need to wait for.",
+      "sections": [
+        {
+          "id": "confirmed",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "What is League of Legends New Dawn?",
+          "text": "New Dawn is Riot’s name for a major update to League of Legends. The official teaser places it in 2027, with a fuller presentation planned for January. That gives players a release window and a next announcement to watch, but it is not a dated launch notice.",
+          "sourceIds": [
+            "riot-news",
+            "riot-hub",
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "For returning players, the useful distinction is continuity. This is an update to the League they already know, rather than a new standalone product with a separate announced release. Meddler’s clarification also addresses existing champions, cosmetics, runes and the engine. Those are more useful starting points than treating every striking trailer frame as a promise about the finished game.",
+            "The overview below separates those statements from questions Riot has not answered in the sources reviewed here. When a detail is missing, that gap stays visible. There is no invented launch month, guaranteed beta invitation or feature list assembled from anonymous screenshots."
+          ]
+        },
+        {
+          "id": "lol-2",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Is New Dawn actually LoL 2?",
+          "text": "No: Meddler describes New Dawn as a large update to League, not a separate standalone game. “LoL 2” may be shorthand used in headlines and conversation, but it is not the announced product name or evidence that players must start over.",
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "That distinction matters when deciding what to install or what happens to an account. A video calling the update a sequel does not establish a new account system, a separate purchase or a new download destination. The source to follow is Riot’s own announcement, not a label added by a video uploader.",
+            "Meddler also explains that New Dawn is the update’s label, rather than a permanent addition to League’s name. Our release guide therefore tracks an update launch. It does not advertise a “League of Legends 2” preorder or early-access installer."
+          ],
+          "related": {
+            "href": "/release-date/#release-window",
+            "label": "Read the confirmed release window"
+          }
+        },
+        {
+          "id": "fact-check",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Confirmed facts and unanswered questions",
+          "text": "Use this as a quick reference when a new rumor appears. The left column summarizes statements with named sources; the right column shows the limits of those statements. A confirmed direction is not a complete specification.",
+          "sourceIds": [
+            "riot-news",
+            "meddler",
+            "tracker"
+          ],
+          "table": {
+            "headers": [
+              "Confirmed by the available statements",
+              "Still unannounced or not established"
+            ],
+            "rows": [
+              [
+                "New Dawn is a major League update, not a standalone sequel.",
+                "An exact day, patch number and regional launch schedule."
+              ],
+              [
+                "Runes and a Keystone remain; the system is being streamlined.",
+                "The final rune list, numerical balance and every champion-specific interaction."
+              ],
+              [
+                "The update uses an upgraded version of League’s Hextech engine.",
+                "A final hardware specification, performance guarantee or complete technical changelog."
+              ],
+              [
+                "Current champions and skins remain usable.",
+                "Every model change, cosmetic adjustment or individual gameplay change."
+              ],
+              [
+                "A full reveal is planned for January, with release later in 2027.",
+                "A public beta date, invitation process or guaranteed early-access route."
+              ]
+            ]
+          },
+          "paragraphs": [
+            "These are different levels of certainty. “Skins remain usable” answers the ownership-continuity concern; it does not establish the final appearance of every skin. Similarly, keeping runes does not mean the current rune interface or every option will be unchanged. Read each clarification narrowly enough that it still means what the developer actually said."
+          ]
+        },
+        {
+          "id": "runes",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Runes, champions and the engine: what carries forward?",
+          "text": "The November 16 clarification tackles four recurring questions. Players will still choose runes, including a Keystone. Development continues on an upgraded Hextech engine. New Dawn is an update rather than another game, and current champions and skins will remain usable.",
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "For someone with a long-standing champion pool, that is a practical reason to keep following their mains rather than assume a fresh roster is replacing them. It is not a promise that those champions will play identically. Balance, visuals and individual systems still need their own announced details.",
+            "The engine clarification also rules out presenting a different engine as confirmed. It does not let us quote a frame-rate target or promise that an older computer will run the update. Wait for published requirements and performance guidance before making hardware decisions."
+          ],
+          "image": {
+            "src": "/assets/official-ahri.webp",
+            "alt": "Existing League of Legends Ahri splash illustration",
+            "caption": "Existing League artwork ? this is not a preview of a New Dawn champion model",
+            "sourceId": "ahri-art",
+            "width": 1215,
+            "height": 717
+          }
+        },
+        {
+          "id": "next-reveal",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "When is the next full reveal?",
+          "text": "The next stated milestone is January 2027. Meddler’s follow-up says early January; neither source reviewed here supplies a specific calendar day or broadcast time. Release is planned later in 2027, so the reveal and the playable update remain separate events.",
+          "sourceIds": [
+            "riot-news",
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "The reveal is the point to watch for a fuller account of the changes, not a reason to mark January as launch month. We will check whether Riot adds dates, testing information, regional details or a clearer description of the new systems. Until then, the most honest calendar entry is “January reveal, date to be announced.”"
+          ],
+          "related": {
+            "href": "/release-date/#january",
+            "label": "See the reveal and release timeline"
+          }
+        },
+        {
+          "id": "cinematic",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "How is this different from A New Dawn?",
+          "text": "A New Dawn is the earlier League cinematic documented in July 2014 coverage. It is a separate work from the current update announcement. Similar wording in an old page title can put the film next to current New Dawn news in search results, even though they refer to different things.",
+          "sourceIds": [
+            "old-film",
+            "film-date"
+          ],
+          "paragraphs": [
+            "Check the publisher, upload date and context before using a result as evidence. The historical film is a cinematic, while the current announcement concerns the 2027 League update. Its cast and fight scenes do not confirm a new roster, a launch date or a feature in the upcoming release."
+          ],
+          "image": {
+            "src": "/assets/official-cinematic.webp",
+            "alt": "Artwork for the historical A New Dawn League of Legends cinematic",
+            "caption": "A New Dawn · the 2014 cinematic, a different work from the 2027 update",
+            "sourceId": "old-film"
+          }
+        },
+        {
+          "id": "follow",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "What should players do while waiting?",
+          "text": "Follow the official New Dawn hub for Riot’s updates and use the release guide for timing. There is no need to trust an installer, giveaway form or countdown just because it uses the New Dawn name. A claim of early access should link to an announcement that actually offers it.",
+          "sourceIds": [
+            "riot-hub",
+            "riot-news"
+          ],
+          "paragraphs": [
+            "When checking a new claim, start with three questions: who published it, what exactly did they say, and when was that statement made? A creator’s interpretation can be interesting without becoming a confirmed feature. We will add useful detail when there is enough evidence to explain it, rather than publish an empty page for every related search."
+          ],
+          "related": {
+            "href": "/release-date/#countdowns",
+            "label": "How to check release countdowns"
+          }
+        }
       ],
-      "faq":[
-        {"question":"Where should I follow official updates?","answer":"Use Riot’s New Dawn hub and League news. This site links back to those sources and does not collect email addresses."},
-        {"question":"Is every detail in a leak confirmed?","answer":"No. A rumor needs its own source and a clear unconfirmed label. We will not fill a guide with unsupported feature lists."}
-      ]
+      "faq": [
+        {
+          "question": "Is League of Legends 2 coming out?",
+          "answer": "New Dawn is described by Meddler as an update to League, not a standalone sequel. “LoL 2” is informal shorthand, not the announced name of a separate game."
+        },
+        {
+          "question": "Will my champions and skins remain usable?",
+          "answer": "Meddler says current champions and skins remain usable after New Dawn launches. That statement does not specify every visual or balance change."
+        },
+        {
+          "question": "Are runes being removed?",
+          "answer": "No. The clarification says players will still select runes, including a Keystone, while the system is streamlined. The final list of changes has not been supplied here."
+        },
+        {
+          "question": "Is League switching to another engine?",
+          "answer": "Meddler says New Dawn uses an upgraded version of the Hextech engine League already uses. Claims of a confirmed switch to a different engine conflict with that clarification."
+        },
+        {
+          "question": "Is the January reveal the release?",
+          "answer": "No. January is the full reveal milestone; the stated release window is later in 2027. There is no exact launch day in the checked sources."
+        },
+        {
+          "question": "Can I sign up for official news?",
+          "answer": "Riot’s New Dawn hub offers its own update sign-up. Follow the official link; this independent site does not collect email addresses or issue beta invitations."
+        },
+        {
+          "question": "Is this the old A New Dawn cinematic?",
+          "answer": "The historical cinematic dates to 2014. The current New Dawn announcement concerns the 2027 update, and old film footage is not evidence for its features."
+        },
+        {
+          "question": "Where can I check timing without reading rumors?",
+          "answer": "Open the release-date guide linked above. It keeps the reveal, release window and unknown regional schedule separate, with links back to the statements being tracked."
+        }
+      ],
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Official League of Legends New Dawn teaser artwork",
+        "caption": "The next chapter of League · Official teaser, November 2026",
+        "sourceId": "teaser"
+      }
     },
     {
-      "route":"/release-date/","lang":"en","published":true,
-      "title":"LoL New Dawn Release Date: 2027 Window & January Reveal",
-      "description":"LoL New Dawn is planned for later in 2027, with a full reveal in January 2027. Check confirmed timing, unknown dates and the source timeline.",
-      "heading":"LoL New Dawn release date","eyebrow":"RELEASE WATCH / NOVEMBER 16, 2026",
-      "lead":"2027. The day is still unknown.",
-      "intro":"The exact release date has not been announced in the official sources checked on November 16, 2026. Keep the reveal and launch as two separate milestones.",
-      "sections":[
-        {"id":"release-window","label":"01 / THE SHORT ANSWER","heading":"When does New Dawn come out?","status":"Official release window","text":"Riot’s announcement points to release later in 2027. It does not name a month or day. A precise countdown would imply more certainty than the announcement provides.","sourceIds":["riot-news"]},
-        {"id":"january","label":"02 / REVEAL ≠ RELEASE","heading":"What happens in January 2027?","text":"January is the full reveal milestone. It is not a confirmed January launch. The year follows the November 2026 announcement’s reference to the upcoming January.","sourceIds":["riot-news"]},
-        {"id":"watch","label":"04 / WHAT TO WATCH NEXT","heading":"How this page will change","text":"Look for an explicit release announcement, any testing details and region-specific timing. When a source adds or changes one of those facts, we will update this page and its modification date.","sourceIds":["riot-hub"]}
+      "route": "/release-date/",
+      "lang": "en",
+      "published": true,
+      "title": "LoL New Dawn Release Date: 2027 Window & January Reveal",
+      "description": "LoL New Dawn is planned for later in 2027, with a full reveal in January 2027. Check confirmed timing, unknown dates and the source timeline.",
+      "heading": "LoL New Dawn release date",
+      "eyebrow": "RELEASE WATCH / NOVEMBER 16, 2026",
+      "lead": "2027. The day is still unknown.",
+      "intro": "League of Legends New Dawn is planned for later in 2027. The full reveal is expected in January 2027, but an exact release date has not been announced in the sources checked on November 16, 2026.",
+      "sections": [
+        {
+          "id": "release-window",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "When is the New Dawn release date?",
+          "text": "Riot’s teaser gives a release window of later in 2027. It does not name a month, day, patch number or server-opening time. If you only need the short answer, that is the current limit: the year is stated, while the exact launch date remains unannounced.",
+          "sourceIds": [
+            "riot-news",
+            "teaser"
+          ],
+          "paragraphs": [
+            "This page tracks the playable update, not the historical A New Dawn cinematic and not a separate sequel. New Dawn is the name Riot is using for a major update to League. A trailer upload, a developer presentation and the moment players receive the update are different events, even when a headline uses “release” loosely.",
+            "The practical consequence is that no exact countdown can currently be calculated from these sources. A date-filled widget may be counting toward someone’s prediction. It should not be treated as a confirmed appointment or a reason to arrange time off."
+          ],
+          "related": {
+            "href": "/#lol-2",
+            "label": "Why New Dawn is not a standalone LoL 2"
+          }
+        },
+        {
+          "id": "january",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "What is happening in January 2027?",
+          "text": "The full reveal is planned for January, and Meddler’s follow-up narrows the description to early January. There is still no specific day or stream time in the statements checked here. The separate release window remains later in 2027.",
+          "sourceIds": [
+            "riot-news",
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "A full reveal should be read as the next information milestone. It is not a beta opening, a patch deployment or a promise that the client will change that morning. We will update this section if Riot publishes a broadcast schedule, including the stated time zone and the original announcement.",
+            "For now, keep January as a reminder to check official news. Do not convert “early January” into January 1, the first patch Wednesday or a date inferred from a different Riot game. None of those substitutions is supplied by the announcement."
+          ]
+        },
+        {
+          "id": "why-no-date",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Why has Riot not announced a specific day?",
+          "text": "The checked announcements do not explain why a precise launch day has been withheld. We can report what Riot chose to announce; we cannot attribute a production problem, delay or marketing strategy to the team without a statement.",
+          "sourceIds": [
+            "riot-news",
+            "riot-hub"
+          ],
+          "paragraphs": [
+            "A broad window and an exact deployment date answer different questions. The 2027 window tells players which period the project is targeting. A final date would need enough detail to distinguish an announcement from testing, patch availability and server access. That distinction is useful for reading the news, but it is not inside knowledge about Riot’s internal schedule.",
+            "There is also no announced exact date in this guide against which to claim a delay. If a future announcement changes the window, the comparison should use the old statement and the new one, with their dates. An unsourced prediction slipping by a month is not evidence that Riot missed a deadline."
+          ]
+        },
+        {
+          "id": "history",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "What can earlier League announcements tell us?",
+          "text": "Earlier announcements are useful examples of how much detail a source provides, not a formula for predicting New Dawn. A dated cinematic, a ranked-season start and a staged feature release can all appear in one season’s news without sharing the same rollout.",
+          "sourceIds": [
+            "season24",
+            "patch14"
+          ],
+          "table": {
+            "headers": [
+              "Official historical example",
+              "What it does and does not tell us"
+            ],
+            "rows": [
+              [
+                "Season 2024 Look Ahead, published January 5, 2024.",
+                "It specified a January 10 cinematic while describing several other projects using broader windows. One preview can contain several kinds of date."
+              ],
+              [
+                "Patch 14.1 ranked-season schedule.",
+                "It listed regional start times and exceptions. A regional timetable is stronger evidence for local timing than a generic year-level announcement."
+              ],
+              [
+                "New Dawn teaser, November 2026.",
+                "It announces a January reveal and release later in 2027. Historical January season starts do not turn that into a January launch."
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The useful comparison is the precision of the language. A source that names an exact date and time zone supports a conversion into your local clock. A source that names only a year does not. We will use the same standard when New Dawn receives a fuller schedule."
+          ],
+          "image": {
+            "src": "/assets/official-teaser.webp",
+            "alt": "Official New Dawn teaser promotional artwork",
+            "caption": "Official teaser artwork · a preview, not a dated launch announcement",
+            "sourceId": "teaser"
+          }
+        },
+        {
+          "id": "regions",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Will every region get New Dawn at the same time?",
+          "text": "A region-by-region New Dawn rollout has not been established in the sources reviewed here. There are no confirmed NA, EU, Korea or other server-opening times on this page. A common calendar date would not, by itself, prove simultaneous access everywhere.",
+          "sourceIds": [
+            "riot-news",
+            "patch14"
+          ],
+          "paragraphs": [
+            "Riot’s historical Patch 14.1 notes are a concrete example of why the distinction matters: the ranked-season start used regional local times with named exceptions. That example concerns an older ranked season, not New Dawn, and should not be copied into a 2027 timetable.",
+            "When a New Dawn schedule appears, check which server it covers, its time zone and what event the timestamp describes. Maintenance starting, downloads becoming available and ranked queues reopening are not necessarily the same event. Until Riot provides those details, we will not populate regional timers with borrowed values."
+          ]
+        },
+        {
+          "id": "countdowns",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Can I trust online New Dawn countdowns?",
+          "text": "Only if the countdown names an announced target and links to a source that actually states it. At present, the official release window is not precise enough for a launch-day countdown. A clock can be mathematically accurate while counting toward an unsupported assumption.",
+          "sourceIds": [
+            "riot-news",
+            "teaser"
+          ],
+          "paragraphs": [
+            "Open the cited announcement before trusting the number. Does it say release, reveal or testing? Is the date for New Dawn itself? Does the timer show a time zone, and is that zone supplied by the publisher? If it merely assumes midnight on January 1 or the last day of 2027, it is an estimate rather than a confirmed release clock.",
+            "This guide deliberately shows named milestones instead of a ticking number. Once a specific event has a sourced timestamp, that event can be shown precisely. A reveal timer would still need to be labeled as a reveal timer, not quietly presented as the launch."
+          ],
+          "related": {
+            "href": "/#fact-check",
+            "label": "Compare confirmed facts with open questions"
+          },
+          "image": {
+            "src": "/assets/official-ahri.webp",
+            "alt": "Existing League of Legends Ahri splash illustration",
+            "caption": "Existing League artwork ? this is not a preview of a New Dawn champion model",
+            "sourceId": "ahri-art",
+            "width": 1215,
+            "height": 717
+          }
+        },
+        {
+          "id": "testing",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "Is there a beta, PBE date or early-access download?",
+          "text": "No dated New Dawn public test or invitation process is established by the sources checked for this page. Riot’s official hub is an updates destination. An email sign-up should not be described as guaranteed testing access unless Riot explicitly makes that offer.",
+          "sourceIds": [
+            "riot-hub",
+            "meddler",
+            "tracker"
+          ],
+          "paragraphs": [
+            "Meddler describes New Dawn as an update to League, rather than a standalone game. That is a reason to be careful with unrelated downloads advertising “LoL 2 access.” We link to Riot’s announcement channels and do not distribute an installer, activation key or account-connection tool.",
+            "If testing details are published, this page will distinguish who can participate, which environment is involved and whether the test date is separate from production release. A test build appearing somewhere would not automatically establish the live launch day."
+          ]
+        },
+        {
+          "id": "watch",
+          "label": "FIELD NOTES / NEW DAWN",
+          "heading": "What announcement should I watch for next?",
+          "text": "Watch for the January presentation, then for a source that explicitly names the release date. The most useful additions would be a precise calendar day, patch or client instructions, regional timing and any testing requirements. Each answers a different planning question.",
+          "sourceIds": [
+            "riot-hub",
+            "riot-news"
+          ],
+          "paragraphs": [
+            "We will compare future announcements against the existing window rather than silently overwrite the context. A new schedule should be traceable to its publisher and publication date. If the timing changes, the page will explain what changed and which earlier statement it replaces. The maintained modification date reflects a real editorial change, not an automatic daily refresh."
+          ],
+          "related": {
+            "href": "/#confirmed",
+            "label": "Return to the New Dawn overview"
+          }
+        }
       ],
-      "faq":[
-        {"question":"Can I download New Dawn now?","answer":"The sources checked here do not provide a separate New Dawn download. Use official Riot channels rather than third-party installers promising early access."},
-        {"question":"Is there a confirmed beta date?","answer":"No beta date is established by the official pages reviewed for this guide. We will add one only when a source supplies it."},
-        {"question":"Does a January reveal mean a January release?","answer":"No. The full reveal and the planned release later in 2027 are separate milestones."}
-      ]
+      "faq": [
+        {
+          "question": "What is the exact New Dawn release date?",
+          "answer": "No exact day is supplied by the checked official announcements. The stated window is later in 2027."
+        },
+        {
+          "question": "Does early January mean the update launches then?",
+          "answer": "No. Early January refers to the fuller reveal in Meddler’s follow-up. The teaser separately places release later in 2027."
+        },
+        {
+          "question": "Has New Dawn been delayed?",
+          "answer": "The sources reviewed here do not establish a missed exact launch date or announce a delay. A community prediction is not a published Riot deadline."
+        },
+        {
+          "question": "Will NA and EU launch together?",
+          "answer": "A New Dawn regional timetable has not been established here. We will show separate times only when Riot supplies them."
+        },
+        {
+          "question": "Can I reserve a beta place through this site?",
+          "answer": "No. This site does not collect account details, issue invitations or promise beta places. Follow Riot’s official hub for any future testing announcement."
+        },
+        {
+          "question": "Will the January reveal include a launch date?",
+          "answer": "That has not been promised in the checked statements. A fuller reveal may add details, but this page will not promise a specific announcement before Riot does."
+        }
+      ],
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Official League of Legends New Dawn teaser artwork",
+        "caption": "The next chapter of League · Official teaser, November 2026",
+        "sourceId": "teaser"
+      }
     },
-    {"route":"/changes/","lang":"en","published":false,"intent":"Confirmed update changes"},
-    {"route":"/characters/","lang":"en","published":false,"intent":"Champion continuity and confirmed character details"},
-    {"route":"/leaks/","lang":"en","published":false,"intent":"Traceable rumors separated from official facts"},
-    {"route":"/teaser/","lang":"en","published":false,"intent":"Official teaser context and observations"},
-    {"route":"/runes/","lang":"en","published":false,"intent":"Confirmed rune-system details"},
-    {"route":"/lol-2/","lang":"en","published":false,"intent":"Clarify sequel naming using primary statements"},
-    {"route":"/news/","lang":"en","published":false,"intent":"Dated announcement feed"}
+    {
+      "route": "/changes/",
+      "lang": "en",
+      "published": false,
+      "intent": "Confirmed update changes"
+    },
+    {
+      "route": "/characters/",
+      "lang": "en",
+      "published": false,
+      "intent": "Champion continuity and confirmed character details"
+    },
+    {
+      "route": "/leaks/",
+      "lang": "en",
+      "published": false,
+      "intent": "Traceable rumors separated from official facts"
+    },
+    {
+      "route": "/teaser/",
+      "lang": "en",
+      "published": false,
+      "intent": "Official teaser context and observations"
+    },
+    {
+      "route": "/runes/",
+      "lang": "en",
+      "published": false,
+      "intent": "Confirmed rune-system details"
+    },
+    {
+      "route": "/lol-2/",
+      "lang": "en",
+      "published": false,
+      "intent": "Clarify sequel naming using primary statements"
+    },
+    {
+      "route": "/news/",
+      "lang": "en",
+      "published": false,
+      "intent": "Dated announcement feed"
+    }
   ]
 }

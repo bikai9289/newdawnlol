@@ -8,4 +8,4 @@ License text: <https://creativecommons.org/licenses/by-sa/4.0/legalcode.en>
 
 Project-authored code, text, geometric graphics and sharing images use the same CC BY-SA 4.0 notice. Provenance: `public/art-sources.json`. The upstream README is retained in `docs/UPSTREAM-README.md`.
 
-League of Legends and Riot Games names and trademarks belong to their respective owners and are excluded from this license. No Riot artwork, screenshots or logos are distributed by this build. External linked materials retain their own terms. This independent fan guide is not affiliated with or endorsed by Riot Games.
+League of Legends and Riot Games names and trademarks belong to their respective owners and are excluded from this license. Credited official Riot video thumbnails and existing champion artwork are included for editorial context, retain Riot copyright and are excluded from CC BY-SA. See public/art-sources.json and Riot's Legal Jibber Jabber policy. External linked materials retain their own terms. This independent fan guide is not affiliated with or endorsed by Riot Games.

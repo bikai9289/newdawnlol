@@ -51,7 +51,7 @@ GitHub Actions runs `npm run check`. Direct Pages/GitHub integration needs no de
 
 `npm run check`: Node acceptance tests plus clean build. `npm run test:browser`: existing Playwright via `PLAYWRIGHT_MODULE` or resolvable `playwright`; starts its own preview, checks 320/390/768/1440 px, FAQ, browser errors and missing routes, and saves ignored screenshots. Browser tooling is optional, not a build dependency.
 
-`scripts/create-social-card.py` is an optional Python/Pillow maintenance helper. The committed 1200×630 PNG is copied directly in normal builds. Geometric graphics are original; provenance is in `public/art-sources.json`.
+`scripts/create-social-card.py` is an optional Python/Pillow maintenance helper. The committed 1200×630 PNG is copied directly in normal builds. Geometric graphics are original; official video thumbnails retain Riot copyright. Provenance is in `public/art-sources.json`.
 
 ## License
 
