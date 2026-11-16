@@ -4,6 +4,8 @@ Independent English information site for League of Legends New Dawn. Production 
 
 Node.js 20+, no build/runtime dependencies. No Astro, login, payments, analytics, installers, service worker or countdown.
 
+Live Pages deployment: https://newdawnlol.pages.dev/ — GitHub `main` is connected for automatic production deployments. Custom-domain activation is awaiting DNS onboarding; see [deployment status](docs/DEPLOYMENT.md).
+
 ```sh
 npm run check
 npm run dev
