@@ -19,21 +19,19 @@ Twelve routes/resources were fetched from the live Pages hostname. Home and rele
 
 This proves the Pages deployment is operational. It does not prove that the custom domain or GSC is ready.
 
-## Custom domain: awaiting DNS onboarding
+## Custom domain: zone active, awaiting apex CNAME
 
-`newdawnlol.com` was added under the Pages project's custom domains and is awaiting validation. Public nameservers are currently:
+The account owner added `newdawnlol.com` to Cloudflare and updated nameservers in Spaceship. The Cloudflare zone now reports **Active**, with assigned nameservers:
 
-- `launch1.spaceship.net`
-- `launch2.spaceship.net`
+- `jo.ns.cloudflare.com`
+- `norm.ns.cloudflare.com`
 
-There is no `newdawnlol.com` zone in the connected Cloudflare account. Creating one with the existing Wrangler OAuth credential returned HTTP 403, requiring `com.cloudflare.api.account.zone.create`. The credential has Pages write permission but cannot create a domain zone.
+Pages still reports **Pending**, specifically `CNAME record not set`. The existing Wrangler OAuth credential has Pages write access but the DNS-record listing endpoint returns HTTP 403 `Authentication error`; it cannot inspect or edit DNS records. Public resolution on this machine has not yet reached a working custom-domain endpoint (HTTPS lookup returned ENOTFOUND at this check).
 
 Required account-owner action:
 
-1. In the **same Cloudflare account** as Pages project `newdawnlol`, add `newdawnlol.com` as a website/zone on the Free plan.
-2. Review imported DNS records, preserving any existing email or other services. Copy the **two nameservers assigned to this exact zone**.
-3. In Spaceship's domain nameserver settings, replace its current nameservers with those two Cloudflare nameservers. Do not guess nameservers or use those from a different zone.
-4. After delegation activates, verify the apex CNAME points to `newdawnlol.pages.dev` and the Pages custom domain reaches Active with a valid certificate. If Cloudflare does not create the record automatically, add it in the zone after checking existing apex records.
-5. Fetch both custom-domain pages, sitemap, robots, share image and a missing route again. Then configure GSC Domain verification and submit the custom-domain sitemap. No GSC action has been taken yet.
+1. In Cloudflare → `newdawnlol.com` → DNS → Records, add **CNAME**, name **@**, target **newdawnlol.pages.dev**, proxy **on**, TTL **Auto**. Check existing apex A/AAAA/CNAME records for conflicts first; preserve unrelated records.
+2. Wait for the Pages custom domain to reach Active and obtain a valid certificate. Nameserver caches may still show the previous Spaceship servers temporarily.
+3. Fetch both custom-domain pages, sitemap, robots, share image and a missing route again. Then configure GSC Domain verification and submit the custom-domain sitemap. No GSC action has been taken yet.
 
 Cloudflare documents that a Pages apex domain must be a zone in the same account and use Cloudflare nameservers: https://developers.cloudflare.com/pages/configuration/custom-domains/
