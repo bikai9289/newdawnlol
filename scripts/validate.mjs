@@ -52,6 +52,11 @@ export function validateContent(content, dates, site, locales) {
     for (const item of page.faq) if (!text(item.question) || !text(item.answer)) fail('incomplete FAQ');
   }
   if (!content.pages.some(p => p.route === '/' && p.published)) fail('published home page required');
+  const publishedRoutes=new Set(content.pages.filter(p=>p.published).map(p=>p.route));
+  for(const page of content.pages.filter(p=>p.published)){
+    if(page.relatedRoutes && (!Array.isArray(page.relatedRoutes)||page.relatedRoutes.some(r=>r===page.route||!publishedRoutes.has(r))))fail('invalid related guide route');
+    if(page.showTimeline!==undefined && typeof page.showTimeline!=='boolean')fail('showTimeline must be boolean');
+  }
   if (!Array.isArray(content.timeline) || !content.timeline.length) fail('timeline required');
   for (const item of content.timeline) {
     for (const field of ['date','label','detail','status']) if (!text(item[field])) fail(`missing timeline ${field}`);

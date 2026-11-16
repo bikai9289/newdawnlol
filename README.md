@@ -15,14 +15,17 @@ npm start
 
 `dev` builds and serves http://127.0.0.1:4320. `start` previews existing output. On Windows use `npm.cmd` if PowerShell blocks the shim.
 
-## First release
+## Published pages
 
 - `/`: overview, confirmed/unknown facts, timeline, FAQ and historical cinematic distinction.
 - `/release-date/`: release intent. January 2027 is the reveal; release is planned later in 2027. No exact launch day is invented.
+- `/changes/`: a sourced change ledger and the limits of each clarification.
+- `/teaser/`: original video, announcement context and preview-versus-specification guidance.
+- `/lol-2/`: update-versus-sequel naming, champion/skin continuity and download questions.
 - `/about/`: editorial policy, privacy and attribution; noindex, excluded from sitemap.
-- `404.html`: real Pages 404, noindex. Seven draft topic routes remain unpublished and return 404.
+- `404.html`: real Pages 404, noindex. Unpublished topic routes return 404.
 
-Draft intents in `src/data/content.json`: changes, characters, leaks, teaser, runes, lol-2 and news. Publish only after supplying useful sourced content and a route date. No empty placeholders.
+Draft intents in `src/data/content.json`: characters, leaks, runes, news and map. Search-volume checks have not established their current demand. Publish only after supplying distinct useful sourced content and a route date; no empty placeholders. Navigation and sitemap derive from published pages. Topic pages use `navLabel`, `showTimeline=false` where appropriate, and `relatedRoutes` for sibling links. Internal fragments and related destinations are checked before delivery.
 
 ## Source data
 

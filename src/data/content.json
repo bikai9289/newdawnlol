@@ -165,8 +165,8 @@
             "Meddler also explains that New Dawn is the update’s label, rather than a permanent addition to League’s name. Our release guide therefore tracks an update launch. It does not advertise a “League of Legends 2” preorder or early-access installer."
           ],
           "related": {
-            "href": "/release-date/#release-window",
-            "label": "Read the confirmed release window"
+            "href": "/lol-2/",
+            "label": "Read the dedicated update-versus-sequel guide"
           }
         },
         {
@@ -209,7 +209,11 @@
           },
           "paragraphs": [
             "These are different levels of certainty. “Skins remain usable” answers the ownership-continuity concern; it does not establish the final appearance of every skin. Similarly, keeping runes does not mean the current rune interface or every option will be unchanged. Read each clarification narrowly enough that it still means what the developer actually said."
-          ]
+          ],
+          "related": {
+            "href": "/changes/",
+            "label": "Open the confirmed change ledger"
+          }
         },
         {
           "id": "runes",
@@ -268,6 +272,10 @@
             "alt": "Artwork for the historical A New Dawn League of Legends cinematic",
             "caption": "A New Dawn · the 2014 cinematic, a different work from the 2027 update",
             "sourceId": "old-film"
+          },
+          "related": {
+            "href": "/teaser/#older-film",
+            "label": "Find the official teaser and the historical film"
           }
         },
         {
@@ -327,7 +335,8 @@
         "alt": "Official League of Legends New Dawn teaser artwork",
         "caption": "The next chapter of League · Official teaser, November 2026",
         "sourceId": "teaser"
-      }
+      },
+      "navLabel": "Overview"
     },
     {
       "route": "/release-date/",
@@ -530,13 +539,350 @@
         "alt": "Official League of Legends New Dawn teaser artwork",
         "caption": "The next chapter of League · Official teaser, November 2026",
         "sourceId": "teaser"
-      }
+      },
+      "navLabel": "Release date"
     },
     {
       "route": "/changes/",
       "lang": "en",
-      "published": false,
-      "intent": "Confirmed update changes"
+      "published": true,
+      "navLabel": "Changes",
+      "showTimeline": false,
+      "title": "League of Legends New Dawn Changes: Confirmed vs Unknown",
+      "description": "Check the confirmed New Dawn changes to runes, engine and champion continuity, with a source ledger and clear limits on teaser interpretations.",
+      "heading": "New Dawn changes",
+      "eyebrow": "UPDATE NOTES / CONFIRMED AND UNRESOLVED",
+      "lead": "A change list with its limits attached.",
+      "intro": "Start with the four points Riot Meddler clarified after the teaser. They establish the direction of the update, but they are not final patch notes or a complete feature list.",
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Official League of Legends New Dawn teaser thumbnail",
+        "caption": "Official teaser. Promotional material, not final patch notes.",
+        "sourceId": "teaser"
+      },
+      "relatedRoutes": [
+        "/",
+        "/teaser/",
+        "/lol-2/"
+      ],
+      "sections": [
+        {
+          "id": "change-ledger",
+          "label": "01 / CONFIRMED DIRECTION",
+          "heading": "The changes Riot has clarified",
+          "text": "Meddler’s November 16 statement addresses questions that the teaser left open. Read the confirmed point together with its limit: continuity of a system does not mean every part of that system is unchanged.",
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ],
+          "table": {
+            "headers": [
+              "Clarified point",
+              "What it does not establish"
+            ],
+            "rows": [
+              [
+                "Players still choose runes, including a Keystone; the system is being streamlined.",
+                "The complete rune list, individual values or the final selection interface."
+              ],
+              [
+                "New Dawn uses an upgraded Hextech engine.",
+                "A different engine, minimum hardware requirements or a guaranteed frame rate."
+              ],
+              [
+                "New Dawn is an update to League rather than a separate game.",
+                "A separate product launch, account migration or new storefront."
+              ],
+              [
+                "Current champions and skins remain usable.",
+                "Identical balance, animations or visual presentation for every champion and skin."
+              ]
+            ]
+          },
+          "paragraphs": [
+            "This is a useful correction to descriptions that treat a rune-system removal or an engine replacement as settled facts. A visual impression from the trailer should not override a later, explicit developer clarification."
+          ]
+        },
+        {
+          "id": "patch-notes",
+          "label": "02 / BEFORE THE FINAL NUMBERS",
+          "heading": "Why this is not a balance changelog",
+          "text": "There is not a complete New Dawn patch specification in the sources used here. The teaser and follow-up statement do not supply a champion-by-champion set of numerical changes.",
+          "paragraphs": [
+            "For a build decision, look for the exact ability, item or rune and its published values. A short shot of a champion moving differently is not enough to calculate a cooldown or declare a permanent mechanic. We will distinguish an announced change from a trailer observation and a later test-build revision.",
+            "The distinction also matters for existing skins. Continued usability answers whether players can keep using them; it does not promise that every effect will be rendered in precisely the same way after the update."
+          ],
+          "sourceIds": [
+            "teaser",
+            "meddler",
+            "tracker"
+          ]
+        },
+        {
+          "id": "coverage-gaps",
+          "label": "03 / OPEN QUESTIONS",
+          "heading": "What still needs its own announcement?",
+          "text": "The current evidence does not provide a complete map specification, a finished client changelog, all champion loadout rules or final performance requirements. These are separate questions, not details we can infer from the release window.",
+          "paragraphs": [
+            "When Riot publishes more, this ledger can record the named system, the source date and the exact scope of the statement. A source for one champion does not establish the behavior of the entire roster. A test feature should also retain its test status until it is included in a live release announcement."
+          ],
+          "sourceIds": [
+            "riot-hub",
+            "teaser"
+          ],
+          "related": {
+            "href": "/teaser/",
+            "label": "How to read the teaser without inventing features"
+          }
+        },
+        {
+          "id": "next-update",
+          "label": "04 / NEXT CHECKPOINT",
+          "heading": "When will the full change list arrive?",
+          "text": "The next stated presentation is the January 2027 full reveal. That is a milestone to watch, not a promise that every patch detail will be published that day. Release remains planned for later in 2027.",
+          "paragraphs": [
+            "We will add dated statements when they answer a specific open question. Until a final schedule exists, the release guide keeps the reveal and the playable update separate. This page tracks what changes; the timing page tracks when an announced event happens."
+          ],
+          "sourceIds": [
+            "riot-news",
+            "meddler",
+            "tracker"
+          ],
+          "related": {
+            "href": "/release-date/",
+            "label": "Check the current release window"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the rune system being removed?",
+          "answer": "Meddler says players will still pick runes and a Keystone. The system is being streamlined; the final details are not supplied in that clarification."
+        },
+        {
+          "question": "Is New Dawn moving to a different engine?",
+          "answer": "The developer clarification says it uses an upgraded Hextech engine. It does not announce an engine replacement."
+        },
+        {
+          "question": "Does a confirmed change stay final forever?",
+          "answer": "No. The ledger records what a dated source currently says. A later official statement or test revision may change the detail, and should be identified as a revision."
+        }
+      ]
+    },
+    {
+      "route": "/teaser/",
+      "lang": "en",
+      "published": true,
+      "navLabel": "Teaser",
+      "showTimeline": false,
+      "title": "League of Legends New Dawn Teaser: Official Video & Context",
+      "description": "Find the official New Dawn teaser, distinguish it from the 2014 cinematic, and separate its announcement from predictions about the 2027 update.",
+      "heading": "The New Dawn teaser",
+      "eyebrow": "WATCH GUIDE / OFFICIAL VIDEO",
+      "lead": "Watch the source. Keep the context.",
+      "intro": "Riot’s official League of Legends: New Dawn Teaser was published in November 2026. This guide points to that upload and explains which announcements travel with it, without treating promotional footage as final patch documentation.",
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Blitzcrank on the official New Dawn teaser thumbnail",
+        "caption": "Official New Dawn teaser thumbnail. Open the original upload below.",
+        "sourceId": "teaser"
+      },
+      "relatedRoutes": [
+        "/",
+        "/changes/",
+        "/lol-2/"
+      ],
+      "sections": [
+        {
+          "id": "official-video",
+          "label": "01 / ORIGINAL UPLOAD",
+          "heading": "Where can I watch the official teaser?",
+          "text": "Use the League of Legends channel’s original upload linked below. The source thumbnail on this page is credited to Riot and links back to that video. This site does not host a copy of the footage.",
+          "paragraphs": [
+            "Opening the original also lets you check its publication context and description rather than rely on a re-upload’s title. A fan edit can use the same footage with a different headline, older clips or speculative commentary. Those additions do not become Riot’s announcement.",
+            "The video opens on YouTube when you follow the source link. It is not embedded or autoplayed here, so simply reading this guide does not load a third-party video player."
+          ],
+          "sourceIds": [
+            "teaser"
+          ]
+        },
+        {
+          "id": "announcement",
+          "label": "02 / WHAT IS ACTUALLY DATED",
+          "heading": "What timing does the teaser announce?",
+          "text": "The official news listing and video description point to a full reveal in January and release later in 2027. Meddler’s subsequent clarification describes the reveal as early January. There is no exact launch day in those sources.",
+          "paragraphs": [
+            "Keep the event attached to its date. The November teaser publication is not a release. The January presentation is a reveal. A more dramatic trailer title does not make January a confirmed launch month. If a future upload adds an exact date, compare that statement with the earlier window rather than carrying forward an unsupported countdown."
+          ],
+          "sourceIds": [
+            "teaser",
+            "riot-news",
+            "meddler",
+            "tracker"
+          ],
+          "related": {
+            "href": "/release-date/#january",
+            "label": "See the reveal versus release explanation"
+          }
+        },
+        {
+          "id": "reading-footage",
+          "label": "03 / OBSERVATION IS NOT A SPECIFICATION",
+          "heading": "How should I interpret a teaser shot?",
+          "text": "Separate a visible observation from an explanation of how a system works. A shot can show an interface or an animation without establishing all its rules, final values or availability across champions.",
+          "paragraphs": [
+            "For example, a trailer discussion may interpret a customization choice as replacing runes. The later developer statement says runes and a Keystone remain. The explicit clarification is the stronger evidence for that question; the shot alone did not describe the complete system.",
+            "This guide does not attach invented timestamps or a shot-by-shot mechanic list. To make a precise claim about an ability, we would need to inspect the relevant footage and pair it with the source’s stated scope. Even then, an observed preview should remain labeled as a preview until a release specification confirms it."
+          ],
+          "sourceIds": [
+            "teaser",
+            "meddler",
+            "tracker"
+          ],
+          "related": {
+            "href": "/changes/#change-ledger",
+            "label": "Read the confirmed change ledger"
+          }
+        },
+        {
+          "id": "older-film",
+          "label": "04 / A DIFFERENT DAWN",
+          "heading": "Is this the old A New Dawn cinematic?",
+          "text": "No. The historical A New Dawn cinematic is documented in July 2014 coverage. The current New Dawn teaser concerns the 2027 League update. Similar names can place both works in a search result without making them the same announcement.",
+          "paragraphs": [
+            "Check the upload’s title, publisher and date before drawing a conclusion from a result or thumbnail. The old cinematic’s cast does not establish which champions will receive changes in New Dawn. It is a useful film to watch in its own right, but it is not a launch trailer for this update."
+          ],
+          "sourceIds": [
+            "old-film",
+            "film-date"
+          ],
+          "image": {
+            "src": "/assets/official-cinematic.webp",
+            "alt": "Official thumbnail of the historical A New Dawn cinematic",
+            "caption": "The 2014 A New Dawn cinematic. Separate from the current update teaser.",
+            "sourceId": "old-film"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I download the teaser here?",
+          "answer": "This page links to the official video and does not redistribute a video file. Use the original publisher’s player and options."
+        },
+        {
+          "question": "Does every trailer detail represent the final game?",
+          "answer": "No. Promotional material establishes what is shown, not every rule or final number behind it. Later explicit developer statements can clarify an early interpretation."
+        },
+        {
+          "question": "Is there a date for the next full trailer?",
+          "answer": "The checked sources name the January full reveal but do not give an exact broadcast day or promise a particular new trailer format."
+        }
+      ]
+    },
+    {
+      "route": "/lol-2/",
+      "lang": "en",
+      "published": true,
+      "navLabel": "LoL 2?",
+      "showTimeline": false,
+      "title": "Is New Dawn LoL 2? Riot’s Update and Account Clarifications",
+      "description": "New Dawn is a League of Legends update, not a standalone LoL 2. Read what Riot clarified about the name, existing champions, skins and engine.",
+      "heading": "Is New Dawn LoL 2?",
+      "eyebrow": "NAME CHECK / UPDATE OR SEQUEL",
+      "lead": "A major update to the League you know.",
+      "intro": "No: Riot Meddler describes New Dawn as an update to League of Legends, rather than a separate standalone game. The nickname “LoL 2” is not an announcement of another product.",
+      "heroImage": {
+        "src": "/assets/official-teaser.webp",
+        "alt": "Official League of Legends New Dawn teaser artwork",
+        "caption": "New Dawn is the update name. It is not an announced standalone sequel.",
+        "sourceId": "teaser"
+      },
+      "relatedRoutes": [
+        "/",
+        "/changes/",
+        "/teaser/"
+      ],
+      "sections": [
+        {
+          "id": "name",
+          "label": "01 / THE DIRECT ANSWER",
+          "heading": "What does Riot mean by New Dawn?",
+          "text": "The November 16 clarification says the New Dawn label refers to a large update, and is not intended as a permanent addition to League’s name. That directly addresses the idea that the teaser announces a separately named sequel.",
+          "paragraphs": [
+            "Players may use “LoL 2” to express how large the update feels. That conversational meaning is different from a publisher announcing a second game. A headline can borrow the nickname without proving a new store listing, separate launch or new account system.",
+            "When checking another article, look for the statement behind the name. If its only evidence is that the teaser looks different, it has not established a separate product. Here, the developer’s explicit explanation is the relevant evidence."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ]
+        },
+        {
+          "id": "collection",
+          "label": "02 / CHAMPIONS AND COSMETICS",
+          "heading": "Will current champions and skins still work?",
+          "text": "Meddler says current champions and skins remain usable once New Dawn launches. That is a specific continuity statement, not a promise that every piece of content will look or behave identically after the update.",
+          "paragraphs": [
+            "For someone deciding whether their existing collection is being replaced by a blank sequel account, continued usability is the concrete point to retain. The statement does not specify a migration process or an account reset, and this page does not invent either.",
+            "It also does not settle unrelated questions about rank, progression or individual balance changes. Those require their own announcements. Keeping a champion available does not prevent that champion from receiving a gameplay or presentation update."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ],
+          "related": {
+            "href": "/changes/",
+            "label": "Check what the continuity statements do and do not confirm"
+          }
+        },
+        {
+          "id": "engine",
+          "label": "03 / TECHNOLOGY DOES NOT DEFINE A SEQUEL",
+          "heading": "Does New Dawn replace League’s engine?",
+          "text": "The same clarification says development is on an upgraded Hextech engine, the custom engine League already uses. A claim that Riot has confirmed a move to another named engine conflicts with that statement.",
+          "paragraphs": [
+            "An engine upgrade and a separately sold sequel are different questions. Even a substantial technical change would not, on its own, establish how a product is named or distributed. In this case, Riot has addressed both the technology and the standalone-game question directly.",
+            "The clarification does not provide a minimum GPU, a target frame rate or a final performance guarantee. If the practical question is whether your computer can run the update, wait for requirements rather than infer them from the engine label."
+          ],
+          "sourceIds": [
+            "meddler",
+            "tracker"
+          ]
+        },
+        {
+          "id": "downloads",
+          "label": "04 / NO INVENTED SEQUEL INSTALLER",
+          "heading": "Should I look for a LoL 2 download or preorder?",
+          "text": "The sources checked here do not announce a standalone LoL 2 installer, preorder or purchase. This independent guide does not distribute game files, take payments or offer account transfers.",
+          "paragraphs": [
+            "Use Riot’s official New Dawn hub for announcements. A page offering access needs a source that actually offers access; the existence of a teaser is not enough. An updates mailing list should also not be described as a guaranteed beta place unless Riot makes that promise.",
+            "For timing, the announced window belongs to the New Dawn update: a January reveal and release later in 2027. It should not be presented as the launch schedule of a different game just because a search query uses “LoL 2.”"
+          ],
+          "sourceIds": [
+            "riot-hub",
+            "riot-news",
+            "teaser"
+          ],
+          "related": {
+            "href": "/release-date/",
+            "label": "Read the New Dawn release-window guide"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will League permanently be renamed New Dawn?",
+          "answer": "Meddler’s clarification says New Dawn is the label for the update, not a permanent addition to League’s name."
+        },
+        {
+          "question": "Does “not a sequel” mean nothing important changes?",
+          "answer": "No. An update can substantially change a game. The point is that Riot describes this as an update to League, not a separately announced standalone game."
+        },
+        {
+          "question": "Does the continuity statement confirm my future rank?",
+          "answer": "No. The checked statement addresses current champions and skins. Rank and progression rules would require separate, specific information."
+        }
+      ]
     },
     {
       "route": "/characters/",
@@ -551,28 +897,22 @@
       "intent": "Traceable rumors separated from official facts"
     },
     {
-      "route": "/teaser/",
-      "lang": "en",
-      "published": false,
-      "intent": "Official teaser context and observations"
-    },
-    {
       "route": "/runes/",
       "lang": "en",
       "published": false,
       "intent": "Confirmed rune-system details"
     },
     {
-      "route": "/lol-2/",
-      "lang": "en",
-      "published": false,
-      "intent": "Clarify sequel naming using primary statements"
-    },
-    {
       "route": "/news/",
       "lang": "en",
       "published": false,
       "intent": "Dated announcement feed"
+    },
+    {
+      "route": "/map/",
+      "lang": "en",
+      "published": false,
+      "intent": "Sourced map changes with evidence distinct from teaser interpretation"
     }
   ]
 }

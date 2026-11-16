@@ -7,9 +7,9 @@ const root=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(root,'dist',p),'utf8');
 const build=spawnSync(process.execPath,['scripts/build.mjs'],{cwd:root,encoding:'utf8'});
 test('build succeeds',()=>assert.equal(build.status,0,build.stderr));
-test('only two editorial routes are in sitemap with maintained dates',()=>{
+test('only published editorial routes are in sitemap with maintained dates',()=>{
  const xml=read('sitemap.xml');
- assert.deepEqual([...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),['https://newdawnlol.com/','https://newdawnlol.com/release-date/']);
+ assert.deepEqual([...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]),['/','/release-date/','/changes/','/teaser/','/lol-2/'].map(r=>'https://newdawnlol.com'+r));
  const dates=JSON.parse(fs.readFileSync(path.join(root,'src/data/page-dates.json'),'utf8'));
  for(const route of ['/','/release-date/'])assert.ok(xml.includes(`<lastmod>${dates[route]}</lastmod>`));
 });
@@ -26,13 +26,13 @@ test('indexable pages have unique titles, canonical, sharing tags, one h1 and pa
  assert.notEqual(titles[0],titles[1]);
 });
 test('all local page links and image references resolve; draft routes stay unpublished',()=>{
- for(const file of ['index.html','release-date/index.html','about/index.html','404.html']){
+ for(const file of ['index.html','release-date/index.html','changes/index.html','teaser/index.html','lol-2/index.html','about/index.html','404.html']){
   for(const [,url] of read(file).matchAll(/(?:href|src)="(\/[^"#]*)(?:#[^"]*)?"/g)){
    const dest=path.join(root,'dist',url.endsWith('/')?url+'index.html':url);
    assert.ok(fs.existsSync(dest),`${file}: ${url}`);
   }
  }
- for(const route of ['changes','characters','leaks','teaser','runes','lol-2','news','rift-timer'])assert.ok(!fs.existsSync(path.join(root,'dist',route)));
+ for(const route of ['characters','leaks','runes','news','map','rift-timer'])assert.ok(!fs.existsSync(path.join(root,'dist',route)));
 });
 test('public output contains no old game content, service worker or vendor artwork',()=>{
  const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);
